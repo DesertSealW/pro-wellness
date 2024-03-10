@@ -1,0 +1,9 @@
+{
+  "header-nav": {
+    "about": "About",
+    "portfolio": "Portfolio",
+    "contacts": "Contacts"
+  },
+  "welcome": "Welcome to my app!",
+  "hello_world": "Hello, World!"
+}

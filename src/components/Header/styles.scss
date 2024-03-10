@@ -1,0 +1,15 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  //   height: 120px;
+  padding: 40px;
+
+  &-black {
+    background-color: #0d0d0d;
+  }
+
+  &-white {
+    background-color: #ffffff;
+  }
+}

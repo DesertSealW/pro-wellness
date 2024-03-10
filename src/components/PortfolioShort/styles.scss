@@ -1,0 +1,27 @@
+.portfolio {
+  margin-top: 50px;
+  .upper-part {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    &__text {
+      font-size: 12px;
+      color: #8f8f8f;
+      width: 180px;
+    }
+    .link-1 {
+      font-size: 58px;
+      color: #8f8f8f;
+      text-decoration: none;
+    }
+    .link-2 {
+      font-size: 12px;
+      color: #8f8f8f;
+      padding: 8px 15px;
+      //   width: 120px;
+      height: 35px;
+      border-bottom: #8f8f8f solid 1px;
+      text-decoration: none;
+    }
+  }
+}

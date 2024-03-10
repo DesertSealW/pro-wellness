@@ -1,0 +1,13 @@
+.button-lang {
+  width: 20px;
+  height: 19px;
+  border: none;
+  &-black {
+    background-color: #0d0d0d;
+    color: #ffffff;
+  }
+  &-white {
+    background-color: #ffffff;
+    color: #0d0d0d;
+  }
+}

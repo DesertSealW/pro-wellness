@@ -1,0 +1,31 @@
+.main_page {
+  z-index: 6;
+  .main_page-description {
+    display: flex;
+    flex-direction: column;
+    margin: 0px auto 50px auto;
+    font-style: normal;
+    font-weight: 700;
+    .description {
+      &-title {
+        font-size: 60px;
+        line-height: 82px;
+        color: #e59c9c;
+        margin: 0 auto;
+      }
+      &-coment {
+        font-size: 30px;
+        line-height: 41px;
+        color: white;
+        margin: 0 auto;
+      }
+    }
+  }
+  .main_page-list {
+    background-color: #fff;
+    border-radius: 20px;
+    min-height: 860px;
+    max-width: 1230px;
+    padding: 40px 90px 0 90px;
+  }
+}
