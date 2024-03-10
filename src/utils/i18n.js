@@ -3,8 +3,8 @@ import { initReactI18next } from "react-i18next";
 // import LanguageDetector from "i18next-browser-languagedetector";
 // Загрузка файлов с переводами
 
-import translationEN from "./locales/en/translation.json";
-import translationRU from "./locales/ru/translation.json";
+import translationEN from "../locales/en/translation.json";
+import translationRU from "../locales/ru/translation.json";
 
 i18next
   .use(initReactI18next) // передаем экземпляр i18n в react-i18next, который сделает его доступным для всех компонентов через context API.

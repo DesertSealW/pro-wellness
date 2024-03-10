@@ -1,9 +1,8 @@
 import Hero from "components/Hero";
 import routeMain from "./routes";
-// redux
+import PortfolioShort from "components/PortfolioShort";
 
 import "./styles.scss";
-import PortfolioShort from "components/PortfolioShort";
 
 const MainPage = () => {
   return (

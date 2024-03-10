@@ -1,0 +1,21 @@
+@import "global/styles/global.module.scss";
+.switch {
+  width: 20px;
+  height: 19px;
+  border: none;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}
+
+.dark {
+  background-color: #0d0d0d;
+  color: #ffffff;
+}
+
+.light {
+  background-color: #ffffff;
+  color: #0d0d0d;
+}

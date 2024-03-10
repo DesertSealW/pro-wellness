@@ -1,0 +1,37 @@
+@import "global/styles/global.module.scss";
+.nav {
+  a {
+    text-decoration: none;
+    margin-right: 60px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+}
+
+.dark {
+  a {
+    color: #0d0d0d;
+  }
+}
+
+.light {
+  a {
+    color: #ffffff;
+  }
+}
+
+.menu {
+  display: flex;
+  justify-content: space-between;
+  gap: 12px;
+  font-family: Montserrat;
+  font-size: 12px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 19px;
+}

@@ -1,12 +1,11 @@
 // import { useTranslation } from "react-i18next";
-import i18n from "i18n";
-import "./styles.scss";
+import i18n from "utils/i18n";
 import { useState } from "react";
-import { useLocation } from "react-router-dom";
 
-const ButtonLangChange = () => {
+import styles from "./styles.module.scss";
+
+const ButtonLangChange = (pathname) => {
   const [currentLanguage, setCurrentLanguage] = useState(i18n.language);
-  const location = useLocation();
 
   const changeLanguage = (lng) => {
     i18n.changeLanguage(lng);
@@ -16,9 +15,9 @@ const ButtonLangChange = () => {
   return (
     <button
       className={
-        location.pathname === "/"
-          ? "button-lang button-lang-black"
-          : "button-lang button-lang-white"
+        pathname !== "/"
+          ? `${styles.switch} ${styles.dark}`
+          : `${styles.switch} ${styles.light}`
       }
       onClick={() => changeLanguage(currentLanguage === "ru" ? "en" : "ru")}
     >

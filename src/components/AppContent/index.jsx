@@ -12,11 +12,11 @@ import NotFoundPage from "pages/NotFoundPage";
 
 import Header from "components/Header";
 
+import "./styles.module.scss";
+
 // import Footer from "components/Footer";
 
 const AppContent = () => {
-  //   console.log("routeAboutPage()", routeAboutPage());
-
   return (
     <div>
       <Header />

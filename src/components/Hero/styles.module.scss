@@ -1,0 +1,74 @@
+@import "global/styles/global.module.scss";
+
+.root {
+  // background-color: black;
+  position: relative;
+  display: block;
+  width: 100%;
+  height: calc(100vh - 120px);
+  background-image: url("./../../assets/img/div.t396__carrier.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+}
+
+.root::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.title {
+  height: 244px;
+  position: inherit;
+  text-align: center;
+  font-family: "CormorantGaramond-Regular";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: 300;
+  // line-height: 110px;
+}
+
+.strFirst {
+  display: block;
+  background-color: #0d0d0d;
+  height: 130px;
+  color: #a78b73;
+}
+
+.strSecond {
+  display: block;
+  height: 130px;
+  color: #fff;
+}
+
+.text {
+  display: flex;
+  position: inherit;
+  flex-direction: column;
+  z-index: 5;
+}
+
+.creating {
+  position: inherit;
+  width: 320px;
+  color: #fff;
+  text-align: center;
+  font-family: Montserrat;
+  font-size: 26px;
+  margin: 0 auto;
+}
+
+.callButton {
+  background: #a78b73;
+  width: 184px;
+  height: 54px;
+  color: #fff;
+  font-family: Montserrat;
+  font-size: 14px;
+  margin: 10px auto 0 auto;
+}

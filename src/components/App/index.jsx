@@ -3,7 +3,7 @@ import { BrowserRouter } from "react-router-dom";
 
 import AppContent from "components/AppContent";
 
-import "./styles.scss";
+import "./styles.module.scss";
 
 const App = () => {
   return (

@@ -1,0 +1,73 @@
+@import "global/styles/global.module.scss";
+
+.root {
+  background-color: #0d0d0d;
+  padding-top: 136px;
+}
+.performance {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.left {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.works,
+.get {
+  font-family: Montserrat;
+  font-size: 12px;
+  font-weight: 400;
+  color: #8f8f8f;
+  margin: auto 0;
+}
+
+.works {
+  width: 155px;
+}
+.right {
+  // margin-left: auto;
+  margin: auto 0 auto auto;
+}
+
+.title {
+  font-family: "Cormorant Garamond";
+  font-size: 53px;
+  font-style: normal;
+  font-weight: 300;
+  color: #8f8f8f;
+}
+
+.trio {
+  margin-top: 92px;
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Две одинаковые колонки */
+  gap: 77px;
+}
+
+.two {
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 34px;
+}
+
+.coment1 {
+  color: #8f8f8f;
+  font-family: "Cormorant Garamond";
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 500;
+}
+
+.coment2 {
+  color: #8f8f8f;
+  font-family: Montserrat;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 400;
+}
+
+.trio img {
+  margin-bottom: 20px;
+}

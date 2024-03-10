@@ -1,0 +1,19 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../../assets/fonts/Montserrat-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/Montserrat-Regular.woff") format("woff");
+  font-weight: 300;
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: local("Cormorant Garamond Regular"), local("CormorantGaramond-Regular"),
+    url("../../assets/fonts/CormorantGaramond-Regular.woff2") format("woff2"),
+    url("../../assets/fonts/CormorantGaramond-Regular.woff") format("woff");
+  font-weight: 300;
+  font-weight: normal;
+  font-style: normal;
+}
