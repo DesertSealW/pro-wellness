@@ -1,4 +1,5 @@
-@import "global/styles/global.module.scss";
+@import "global/styles/global.scss";
+@import "global/styles/fonts";
 
 * {
   padding: 0;
@@ -71,4 +72,9 @@ ul li {
 img {
   max-width: 100%;
   vertical-align: top;
+}
+
+.container {
+  width: 90vw;
+  margin: 0 auto;
 }

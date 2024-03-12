@@ -16,9 +16,11 @@ const Header = () => {
       <div className={styles.container}>
         <div className={styles.wrapper}>
           <NavBlock pathname={location.pathname} />
-          <Link to={routeMainPage()}>
-            <Logotip />
-          </Link>
+          <div className={styles.logo}>
+            <Link to={routeMainPage()}>
+              <Logotip />
+            </Link>
+          </div>
           <div className={styles.right}>
             <SocialBlock pathname={location.pathname} />
             <ButtonLangChange pathname={location.pathname} />

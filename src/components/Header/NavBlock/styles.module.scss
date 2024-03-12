@@ -1,4 +1,3 @@
-@import "global/styles/global.module.scss";
 .nav {
   a {
     text-decoration: none;
@@ -21,7 +20,7 @@
 
 .light {
   a {
-    color: #ffffff;
+    color: var(--light);
   }
 }
 
@@ -31,7 +30,6 @@
   gap: 12px;
   font-family: Montserrat;
   font-size: 12px;
-  font-style: normal;
   font-weight: 400;
-  line-height: 19px;
+  margin-left: 4px;
 }

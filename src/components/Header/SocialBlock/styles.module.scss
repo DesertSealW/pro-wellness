@@ -1,18 +1,16 @@
-@import "global/styles/global.module.scss";
-
 // &:last-child {
 //   margin-right: 0;
 
 .social {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  gap: 21px;
 }
 
 .social img {
   display: flex;
   flex-direction: row;
-  width: 25px;
+  width: 22px;
 }
 
 .social img:hover {

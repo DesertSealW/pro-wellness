@@ -1,11 +1,22 @@
-@import "global/styles/global.module.scss";
+@import "global/styles/global";
+@import "global/styles/fonts";
+
+@font-face {
+  font-family: "Cormorant Garamond";
+  src: local("Cormorant Garamond Light"), local("CormorantGaramond-Light"),
+    url("../../assets/fonts/CormorantGaramond-Light.woff2") format("woff2"),
+    url("../../assets/fonts/CormorantGaramond-Light.woff") format("woff");
+  font-weight: 300;
+  font-style: normal;
+}
 
 .root {
   // background-color: black;
   position: relative;
   display: block;
   width: 100%;
-  height: calc(100vh - 120px);
+  //пока добавил +21 потом убрать
+  height: calc(100vh - 120px + 21px);
   background-image: url("./../../assets/img/div.t396__carrier.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -23,27 +34,28 @@
 }
 
 .title {
-  height: 244px;
   position: inherit;
   text-align: center;
-  font-family: "CormorantGaramond-Regular";
+  font-family: "Cormorant_Garamond_Light";
   font-size: 90px;
-  font-style: normal;
   font-weight: 300;
-  // line-height: 110px;
+  line-height: 86px;
+  letter-spacing: 5px;
+  margin-bottom: 15px;
 }
 
 .strFirst {
   display: block;
   background-color: #0d0d0d;
-  height: 130px;
-  color: #a78b73;
+  color: var(--gold);
+  padding-bottom: 13px;
 }
 
 .strSecond {
   display: block;
-  height: 130px;
-  color: #fff;
+  color: var(--light);
+  line-height: 80px;
+  letter-spacing: 3px;
 }
 
 .text {
@@ -56,19 +68,24 @@
 .creating {
   position: inherit;
   width: 320px;
-  color: #fff;
+  color: var(--light);
   text-align: center;
   font-family: Montserrat;
-  font-size: 26px;
-  margin: 0 auto;
+  font-size: 23px;
+  line-height: 27px;
+  margin: 0 auto 28px auto;
+  transform: scale(0.97);
+  z-index: 5;
 }
 
 .callButton {
-  background: #a78b73;
-  width: 184px;
-  height: 54px;
-  color: #fff;
+  display: flex;
+  background: var(--gold);
+  padding: 15px;
+
+  color: var(--light);
   font-family: Montserrat;
   font-size: 14px;
   margin: 10px auto 0 auto;
+  z-index: 5;
 }

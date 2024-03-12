@@ -1,8 +1,8 @@
-@import "global/styles/global.module.scss";
+@import "global/styles/global";
 
 .root {
   background-color: #0d0d0d;
-  padding-top: 136px;
+  padding-top: 121px;
 }
 .performance {
   display: grid;
@@ -19,7 +19,7 @@
   font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
-  color: #8f8f8f;
+  color: var(--gray);
   margin: auto 0;
 }
 
@@ -36,7 +36,7 @@
   font-size: 53px;
   font-style: normal;
   font-weight: 300;
-  color: #8f8f8f;
+  color: var(--gray);
 }
 
 .trio {
@@ -53,7 +53,7 @@
 }
 
 .coment1 {
-  color: #8f8f8f;
+  color: var(--gray);
   font-family: "Cormorant Garamond";
   font-size: 16px;
   font-style: normal;
@@ -61,7 +61,7 @@
 }
 
 .coment2 {
-  color: #8f8f8f;
+  color: var(--gray);
   font-family: Montserrat;
   font-size: 14px;
   font-style: normal;

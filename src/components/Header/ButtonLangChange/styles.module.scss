@@ -1,4 +1,3 @@
-@import "global/styles/global.module.scss";
 .switch {
   width: 20px;
   height: 19px;
@@ -12,10 +11,10 @@
 
 .dark {
   background-color: #0d0d0d;
-  color: #ffffff;
+  color: var(--light);
 }
 
 .light {
-  background-color: #ffffff;
+  background-color: var(--light);
   color: #0d0d0d;
 }

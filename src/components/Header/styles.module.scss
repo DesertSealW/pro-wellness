@@ -1,22 +1,21 @@
-@import "global/styles/global.module.scss";
+@import "global/styles/global.scss";
 
 .root {
-  height: 100px;
   background-color: black;
   color: white;
-  padding: 50px 0;
+  padding: 52px 0 43px 0;
 }
 
 .wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 100px;
+  gap: 60px;
 }
 .wrapper:before {
   content: "";
   position: absolute;
-  top: -20px;
+  top: -26px;
   left: 0;
   display: block;
   width: 100%;
@@ -27,5 +26,9 @@
 .right {
   display: flex;
   justify-self: end;
-  gap: 100px;
+  gap: 71px;
+}
+
+.logo {
+  margin-left: 119px;
 }
