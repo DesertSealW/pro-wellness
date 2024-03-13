@@ -26,9 +26,7 @@
 .title {
   position: inherit;
   text-align: center;
-  font-family: "Cormorant Garamond";
   font-size: 90px;
-  font-weight: 300;
   line-height: 86px;
   letter-spacing: 5px;
   margin-bottom: 15px;
@@ -70,11 +68,10 @@
 
 .callButton {
   display: flex;
+  position: inherit;
   background: var(--gold);
   padding: 15px;
-
   color: var(--light);
-
   font-size: 14px;
   margin: 10px auto 0 auto;
   z-index: 5;
