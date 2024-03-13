@@ -11,7 +11,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 83px;
+  margin-bottom: 98px;
 }
 
 .performance::after {
@@ -21,7 +21,7 @@
   width: 100%;
   height: 1px;
   background-color: var(--gray);
-  bottom: -32px;
+  bottom: -40px;
 }
 
 .left {
@@ -36,11 +36,14 @@
   color: var(--gray);
   margin: auto 0;
 }
-
+.works {
+  line-height: 1.58;
+}
 .get {
   position: relative;
   margin-right: 18px;
-  letter-spacing: -1px;
+  letter-spacing: 0px;
+  line-height: 1.55;
 }
 
 .get::after {
@@ -57,24 +60,25 @@
 
 .works {
   width: 155px;
-  letter-spacing: -1px;
+  // letter-spacing: -1px;
 }
 .right {
   // margin-left: auto;
   margin: auto 0 auto auto;
+  letter-spacing: 4px;
 }
 
 .title {
   font-size: 53px;
   color: var(--gray);
-  letter-spacing: -3px;
+  letter-spacing: 3px;
 }
 
 .trio {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr; /* Две одинаковые колонки */
-  gap: 66px;
+  gap: 73px;
 }
 
 .trio::after {
@@ -84,13 +88,13 @@
   width: 100%;
   height: 1px;
   background-color: var(--gray);
-  bottom: -126px;
+  bottom: -144px;
 }
 
 .two {
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 30px;
+  gap: 31px;
 }
 
 .bigImg {
@@ -109,17 +113,18 @@
   color: var(--gray);
   font-family: "Cormorant Garamond";
   font-size: 16px;
-  letter-spacing: -1px;
+  font-weight: 500;
+  line-height: 1.56;
 }
 
 .coment2 {
   color: var(--gray);
   font-size: 14px;
-  font-style: normal;
   font-weight: 400;
-  letter-spacing: -1px;
+  line-height: 1.57;
+  margin-top: -3px;
 }
 
 .trio img {
-  margin-bottom: 20px;
+  margin-bottom: 25px;
 }

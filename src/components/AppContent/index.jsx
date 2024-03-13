@@ -9,6 +9,9 @@ import PortfolioPage, {
 } from "pages/PortfolioPage";
 import MainPage from "pages/MainPage";
 import NotFoundPage from "pages/NotFoundPage";
+import DevelopmentPage, {
+  routeMain as routeDevelopmentPage,
+} from "pages/DevelopmentPage";
 
 import Header from "components/Header";
 
@@ -26,6 +29,7 @@ const AppContent = () => {
           <Route path={routeAboutPage()} element={<AboutPage />} />
           <Route path={routePortfolioPage()} element={<PortfolioPage />} />
           <Route path={routeContactsPage()} element={<ContactsPage />} />
+          <Route path={routeDevelopmentPage()} element={<DevelopmentPage />} />
 
           <Route path="*" element={<NotFoundPage />} />
         </Routes>

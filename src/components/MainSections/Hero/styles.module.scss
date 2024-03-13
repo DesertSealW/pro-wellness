@@ -26,9 +26,11 @@
 .title {
   position: inherit;
   text-align: center;
-  font-size: 90px;
-  line-height: 86px;
-  letter-spacing: 5px;
+  font-size: 110px;
+
+  line-height: 1;
+  letter-spacing: 1px;
+  margin-top: -1px;
   margin-bottom: 15px;
 }
 
@@ -36,14 +38,14 @@
   display: block;
   background-color: var(--dark);
   color: var(--gold);
-  padding-bottom: 13px;
+  padding: 8px 0 12px 0;
 }
 
 .strSecond {
   display: block;
   color: var(--light);
-  line-height: 80px;
-  letter-spacing: 4px;
+  margin-top: -12px;
+  letter-spacing: -0.2px;
 }
 
 .text {
@@ -55,14 +57,13 @@
 
 .creating {
   position: inherit;
-  width: 320px;
+  width: 330px;
   color: var(--light);
   text-align: center;
-
-  font-size: 23px;
-  line-height: 27px;
+  font-size: 26px;
+  line-height: 1.15;
   margin: 0 auto 28px auto;
-  transform: scale(0.97);
+  // transform: scale(0.97);
   z-index: 5;
 }
 
@@ -70,7 +71,9 @@
   display: flex;
   position: inherit;
   background: var(--gold);
-  padding: 15px;
+  padding: 15px 13px 17px 13px;
+  font-weight: 400;
+  line-height: 1.55;
   color: var(--light);
   font-size: 14px;
   margin: 10px auto 0 auto;

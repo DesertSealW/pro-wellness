@@ -1,4 +1,4 @@
-import DevelopmentPage from "pages/DevelopmentPage";
+import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import link1 from "assets/img/mainPortfolioSection/Link1.png";
@@ -12,12 +12,12 @@ const PortfolioSection = () => {
         <div className={styles.performance}>
           <div className={styles.left}>
             <div className={styles.works}>НАШИ ВЫПОЛНЕННЫЕ РАБОТЫ</div>
-            <Link to={DevelopmentPage}>
+            <Link to={routeDevelopmentPage()}>
               <div className={styles.title}>ПОРТФОЛИО</div>
             </Link>
           </div>
           <div className={styles.right}>
-            <Link to={DevelopmentPage}>
+            <Link to={routeDevelopmentPage()}>
               <div className={styles.get}>ВСЕ РАБОТЫ</div>
             </Link>
           </div>

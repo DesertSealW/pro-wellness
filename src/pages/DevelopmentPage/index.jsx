@@ -1,3 +1,5 @@
+import routeMain from "./routes";
+
 const DevelopmentPage = () => {
   return (
     <>
@@ -19,4 +21,5 @@ const DevelopmentPage = () => {
   );
 };
 
+export { routeMain };
 export default DevelopmentPage;

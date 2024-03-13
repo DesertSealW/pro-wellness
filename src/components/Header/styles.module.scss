@@ -3,14 +3,14 @@
 .root {
   background-color: var(--dark);
   color: var(--light);
-  padding: 52px 0 43px 0;
+  padding: 58px 0 34px 0;
 }
 
 .wrapper {
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 60px;
+  gap: 73px;
 }
 .wrapper:before {
   content: "";
@@ -26,9 +26,10 @@
 .right {
   display: flex;
   justify-self: end;
-  gap: 71px;
+  gap: 86px;
 }
 
 .logo {
-  margin-left: 119px;
+  // margin-left: 140px;
+  justify-self: center;
 }

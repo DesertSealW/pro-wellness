@@ -10,7 +10,7 @@ const Hero = () => {
 
       <div className={styles.creating}>Создаем среду, комфортную для жизни</div>
       <button className={styles.callButton} type="button">
-        Свяжитесь с нами
+        СВЯЖИТЕСЬ С НАМИ
       </button>
     </section>
   );

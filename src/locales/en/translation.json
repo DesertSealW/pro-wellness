@@ -1,8 +1,8 @@
 {
   "header-nav": {
-    "about": "About",
-    "portfolio": "Portfolio",
-    "contacts": "Contacts"
+    "about": "ABOUT",
+    "portfolio": "PORTFOLIO",
+    "contacts": "CONTACTS"
   },
   "welcome": "Welcome to my app!",
   "hello_world": "Hello, World!"
