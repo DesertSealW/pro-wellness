@@ -1,18 +1,9 @@
 @import "global/styles/global";
 
-// @font-face {
-//   font-family: "Cormorant Garamond";
-//   src: local("Cormorant-Garamond-Light"), local("Cormorant_Garamond_Light"),
-//     // url("../../assets/fonts/CormorantGaramond-Light.woff2") format("woff2"),
-//     // url("../../assets/fonts/CormorantGaramond-Light.woff") format("woff"),
-//     url("../../assets/fonts/CormorantGaramond-Light.ttf") format("ttf");
-//   font-weight: 300;
-// }
-
 .root {
-  background-color: #0d0d0d;
+  background-color: var(--dark);
   padding-top: 121px;
-  padding-bottom: 234px;
+  padding-bottom: 166px;
 }
 
 .performance {
@@ -40,7 +31,6 @@
 }
 .works,
 .get {
-  font-family: Montserrat;
   font-size: 12px;
   font-weight: 400;
   color: var(--gray);
@@ -50,6 +40,7 @@
 .get {
   position: relative;
   margin-right: 18px;
+  letter-spacing: -1px;
 }
 
 .get::after {
@@ -66,6 +57,7 @@
 
 .works {
   width: 155px;
+  letter-spacing: -1px;
 }
 .right {
   // margin-left: auto;
@@ -73,11 +65,9 @@
 }
 
 .title {
-  font-family: "Cormorant Garamond";
   font-size: 53px;
-  font-style: normal;
-  font-weight: 300;
   color: var(--gray);
+  letter-spacing: -3px;
 }
 
 .trio {
@@ -104,8 +94,14 @@
 }
 
 .bigImg {
-  height: 820px;
-  width: 826.6px;
+  max-height: 820px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.smolImg {
+  max-height: 360px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -113,16 +109,15 @@
   color: var(--gray);
   font-family: "Cormorant Garamond";
   font-size: 16px;
-  font-style: normal;
-  font-weight: 500;
+  letter-spacing: -1px;
 }
 
 .coment2 {
   color: var(--gray);
-  font-family: Montserrat;
   font-size: 14px;
   font-style: normal;
   font-weight: 400;
+  letter-spacing: -1px;
 }
 
 .trio img {

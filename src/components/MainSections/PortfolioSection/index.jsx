@@ -1,11 +1,11 @@
 import DevelopmentPage from "pages/DevelopmentPage";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import link1 from "assets/img/portfolio/Link1.png";
-import link2 from "assets/img/portfolio/Link2.png";
-import link3 from "assets/img/portfolio/Link3.png";
+import link1 from "assets/img/mainPortfolioSection/Link1.png";
+import link2 from "assets/img/mainPortfolioSection/Link2.png";
+import link3 from "assets/img/mainPortfolioSection/Link3.png";
 
-const PortfolioShort = () => {
+const PortfolioSection = () => {
   return (
     <section className={styles.root}>
       <div className={styles.container}>
@@ -24,7 +24,7 @@ const PortfolioShort = () => {
         </div>
         <div className={styles.trio}>
           <div>
-            <img src={link1} alt="ВИЛЛА В ГОРАХ" />
+            <img src={link1} className={styles.bigImg} alt="ВИЛЛА В ГОРАХ" />
             <div className={styles.coment1}>ВИЛЛА В ГОРАХ</div>
             <div className={styles.coment2}>
               Роскошная вилла в нашей стилистике
@@ -32,7 +32,7 @@ const PortfolioShort = () => {
           </div>
           <div className={styles.two}>
             <div>
-              <img src={link2} alt="ДОМ В ЯПОНИИ" />
+              <img src={link2} className={styles.smolImg} alt="ДОМ В ЯПОНИИ" />
               <div className={styles.coment1}>ДОМ В ЯПОНИИ</div>
               <div className={styles.coment2}>
                 Современный дом 1650м2 с этническими мотивами
@@ -54,4 +54,4 @@ const PortfolioShort = () => {
   );
 };
 
-export default PortfolioShort;
+export default PortfolioSection;

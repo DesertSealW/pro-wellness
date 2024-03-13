@@ -1,8 +1,9 @@
+@import "global/styles/global.scss";
 .switch {
   width: 20px;
   height: 19px;
   border: none;
-  font-family: Montserrat;
+
   font-size: 12px;
   font-style: normal;
   font-weight: 400;
@@ -10,11 +11,11 @@
 }
 
 .dark {
-  background-color: #0d0d0d;
+  background-color: var(--dark);
   color: var(--light);
 }
 
 .light {
   background-color: var(--light);
-  color: #0d0d0d;
+  color: var(--dark);
 }

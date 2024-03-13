@@ -1,6 +1,7 @@
-import Hero from "components/Hero";
+import Hero from "components/MainSections/Hero";
 import routeMain from "./routes";
-import PortfolioShort from "components/PortfolioShort";
+import PortfolioSection from "components/MainSections/PortfolioSection";
+import AboutSection from "components/MainSections/AboutSection";
 
 import "./styles.scss";
 
@@ -8,7 +9,8 @@ const MainPage = () => {
   return (
     <>
       <Hero />
-      <PortfolioShort />
+      <PortfolioSection />
+      <AboutSection />
     </>
   );
 };
