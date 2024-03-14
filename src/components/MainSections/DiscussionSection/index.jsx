@@ -1,15 +1,20 @@
 // import SendingForm from "./SendingForm";
+import SendingForm from "./SendingForm";
 import styles from "./styles.module.scss";
 
 const DiscussionSection = () => {
   return (
     <div className={styles.root}>
       <h2 className={styles.title}>
-        свяжитесь <span className={styles.gold}>с нами</span>
+        обсудим <span className={styles.gold}>ваш</span> проект?
       </h2>
-
+      <p className={styles.tell}>
+        Расскажите нам о своей идее, и мы скоро свяжемся с вами
+      </p>
       <div className={styles.wrapper}>
-        <div className={styles.container}></div>
+        <div className={styles.container}>
+          <SendingForm />
+        </div>
       </div>
     </div>
   );

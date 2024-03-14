@@ -2,7 +2,7 @@ import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
 import link1 from "assets/img/mainPortfolioSection/Link1N.png";
-import link2 from "assets/img/mainPortfolioSection/Link2N.png";
+import link2 from "assets/img/mainPortfolioSection/Link2NN.png";
 import link3 from "assets/img/mainPortfolioSection/Link3N.png";
 
 const PortfolioSection = () => {

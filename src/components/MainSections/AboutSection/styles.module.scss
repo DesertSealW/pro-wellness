@@ -19,7 +19,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
-  transform: translatey(27px);
+  text-transform: uppercase;
 }
 
 .philosophy {
@@ -50,7 +50,7 @@
 
 .pict {
   height: 450px;
-  // max-width: 1344px;
+  width: 1344px;
   object-fit: cover;
 }
 
@@ -63,11 +63,11 @@
 .description {
   display: flex;
   flex-direction: column;
-  font-size: 14px;
+  font-size: 16px;
   font-weight: 400;
   gap: 24px;
-  width: 243px;
-  color: var(--grey);
+  width: 306px;
+  color: var(--grey3);
   margin: 0 auto 0 57px;
   line-height: 1.5625;
 }
@@ -95,7 +95,7 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 10px;
+  gap: 0px;
   margin-left: 20px;
 }
 .item {

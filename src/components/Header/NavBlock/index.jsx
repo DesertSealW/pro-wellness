@@ -20,14 +20,14 @@ const NavBlock = ({ pathname }) => {
         <li>
           <NavLink to={routeAboutPage()}>О НАС</NavLink>
         </li>
-        <li>
+        {/* <li>
           <NavLink to={routeDevelopmentPage()}>КОНЦЕПЦИЯ</NavLink>
         </li>
         <li>
           <NavLink to={routeDevelopmentPage()}>АРХИТЕКТУРА</NavLink>
-        </li>
+        </li> */}
         <li>
-          <NavLink to={routeDevelopmentPage()}>ПРОЕКТЫ</NavLink>
+          <NavLink to={routePortfolioPage()}>ПОРТФОЛИО</NavLink>
         </li>
         <li>
           <NavLink to={routeDevelopmentPage()}>КОНТАКТЫ</NavLink>

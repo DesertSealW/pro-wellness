@@ -12,9 +12,9 @@ const Hero = () => {
         Комплексное проектирование объектов для отдыха, здоровья, восстановления
         и активного долголетия
       </div>
-      {/* <button className={styles.callButton} type="button">
+      <button className={styles.callButton} type="button">
         СВЯЖИТЕСЬ С НАМИ
-      </button> */}
+      </button>
     </section>
   );
 };

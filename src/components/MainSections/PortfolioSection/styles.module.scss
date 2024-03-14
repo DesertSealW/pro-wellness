@@ -2,8 +2,7 @@
 
 .root {
   background-color: var(--light);
-  padding-top: 121px;
-  padding-bottom: 166px;
+  padding: 126px 0 166px 0;
 }
 
 .performance {
@@ -11,7 +10,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 30px;
-  margin-bottom: 98px;
+  margin-bottom: 81px;
   color: var(--grey2);
   font-size: 12px;
   font-weight: 400;
@@ -26,7 +25,7 @@
   width: 100%;
   height: 1px;
   background-color: var(--grey2);
-  bottom: -40px;
+  bottom: -21px;
 }
 
 .left {
@@ -66,13 +65,13 @@
 .right {
   // margin-left: auto;
   margin: auto 0 auto auto;
-  letter-spacing: 4px;
+  // letter-spacing: 0px;
 }
 
 .title {
   font-size: 53px;
   color: var(--grey2);
-  // letter-spacing: 3px;
+  letter-spacing: -1px;
 
   color: var(--grey2);
   font-family: "Cormorant Infant";
@@ -96,7 +95,7 @@
   width: 100%;
   height: 1px;
   background-color: var(--grey2);
-  bottom: -144px;
+  bottom: -167px;
 }
 
 .two {
@@ -107,14 +106,21 @@
 
 .bigImg {
   height: 820px;
-  width: 100%;
-  object-fit: cover;
 }
-
 .smolImg {
   height: 360px;
+}
+.smolImg,
+.bigImg {
   width: 100%;
   object-fit: cover;
+  transition: transform 0.4s;
+}
+
+.smolImg:hover,
+.bigImg:hover {
+  cursor: pointer;
+  transform: scale(1.02);
 }
 
 .coment1 {

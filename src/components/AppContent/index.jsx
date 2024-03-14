@@ -16,6 +16,7 @@ import DevelopmentPage, {
 import Header from "components/Header";
 
 import "./styles.module.scss";
+import Footer from "components/Footer";
 
 // import Footer from "components/Footer";
 
@@ -34,7 +35,7 @@ const AppContent = () => {
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </div>
   );
 };
