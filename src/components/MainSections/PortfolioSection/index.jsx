@@ -1,9 +1,9 @@
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import link1 from "assets/img/mainPortfolioSection/Link1.png";
-import link2 from "assets/img/mainPortfolioSection/Link2.png";
-import link3 from "assets/img/mainPortfolioSection/Link3.png";
+import link1 from "assets/img/mainPortfolioSection/Link1N.png";
+import link2 from "assets/img/mainPortfolioSection/Link2N.png";
+import link3 from "assets/img/mainPortfolioSection/Link3N.png";
 
 const PortfolioSection = () => {
   return (
@@ -24,31 +24,37 @@ const PortfolioSection = () => {
         </div>
         <div className={styles.trio}>
           <div>
-            <img src={link1} className={styles.bigImg} alt="ВИЛЛА В ГОРАХ" />
-            <div className={styles.coment1}>ВИЛЛА В ГОРАХ</div>
+            <img
+              src={link1}
+              className={styles.bigImg}
+              alt="Банный комплекс 'Карелия'"
+            />
+            <div className={styles.coment1}>Банный комплекс "Карелия"</div>
             <div className={styles.coment2}>
-              Роскошная вилла в нашей стилистике
+              Здания, фасады, благоустройство
             </div>
           </div>
           <div className={styles.two}>
             <div>
-              <img src={link2} className={styles.smolImg} alt="ДОМ В ЯПОНИИ" />
-              <div className={styles.coment1}>ДОМ В ЯПОНИИ</div>
+              <img
+                src={link2}
+                className={styles.smolImg}
+                alt="Санаторий Таежный"
+              />
+              <div className={styles.coment1}>Санаторий Таежный</div>
               <div className={styles.coment2}>
-                Современный дом 1650м2 с этническими мотивами
+                Здания, фасады, благоустройство
               </div>
             </div>
             <div>
               <img
                 src={link3}
                 className={styles.smolImg}
-                alt="ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВО"
+                alt="ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВОИнститут им. Хлопина"
               />
-              <div className={styles.coment1}>
-                ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВО
-              </div>
+              <div className={styles.coment1}>Институт им. Хлопина</div>
               <div className={styles.coment2}>
-                Вилла 3800 м2 с гольф-полем в Завидово
+                Здания, фасады, благоустройство
               </div>
             </div>
           </div>

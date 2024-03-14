@@ -3,7 +3,7 @@ import { Link, useLocation } from "react-router-dom";
 import SocialBlock from "./SocialBlock";
 import NavBlock from "./NavBlock";
 import Logotip from "./Logotip";
-import ButtonLangChange from "./ButtonLangChange";
+// import ButtonLangChange from "./ButtonLangChange";
 import { routeMain as routeMainPage } from "pages/MainPage";
 
 import styles from "./styles.module.scss";
@@ -23,7 +23,7 @@ const Header = () => {
           </div>
           <div className={styles.right}>
             <SocialBlock pathname={location.pathname} />
-            <ButtonLangChange pathname={location.pathname} />
+            {/* <ButtonLangChange pathname={location.pathname} /> */}
           </div>
         </div>
       </div>

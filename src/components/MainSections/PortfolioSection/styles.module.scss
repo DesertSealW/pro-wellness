@@ -1,7 +1,7 @@
 @import "global/styles/global";
 
 .root {
-  background-color: var(--dark);
+  background-color: var(--light);
   padding-top: 121px;
   padding-bottom: 166px;
 }
@@ -12,6 +12,11 @@
   grid-template-columns: 1fr 1fr;
   gap: 30px;
   margin-bottom: 98px;
+  color: var(--grey2);
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 1.58333;
+  text-transform: uppercase;
 }
 
 .performance::after {
@@ -20,7 +25,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--gray);
+  background-color: var(--grey2);
   bottom: -40px;
 }
 
@@ -33,17 +38,17 @@
 .get {
   font-size: 12px;
   font-weight: 400;
-  color: var(--gray);
+  color: var(--grey2);
   margin: auto 0;
 }
 .works {
   line-height: 1.58;
+  width: 155px;
 }
+
 .get {
   position: relative;
   margin-right: 18px;
-  letter-spacing: 0px;
-  line-height: 1.55;
 }
 
 .get::after {
@@ -52,16 +57,12 @@
   display: block;
   width: 144%;
   height: 1px;
-  background-color: var(--gray);
+  background-color: var(--grey2);
   bottom: -10px;
   left: 50%;
   transform: translateX(-50%);
 }
 
-.works {
-  width: 155px;
-  // letter-spacing: -1px;
-}
 .right {
   // margin-left: auto;
   margin: auto 0 auto auto;
@@ -70,15 +71,22 @@
 
 .title {
   font-size: 53px;
-  color: var(--gray);
-  letter-spacing: 3px;
+  color: var(--grey2);
+  // letter-spacing: 3px;
+
+  color: var(--grey2);
+  font-family: "Cormorant Infant";
+  font-size: 64px;
+  line-height: 1.54688;
+  text-transform: uppercase;
 }
 
 .trio {
   position: relative;
   display: grid;
-  grid-template-columns: 1fr 1fr; /* Две одинаковые колонки */
+  grid-template-columns: 1fr 1fr;
   gap: 73px;
+  color: var(--grey2);
 }
 
 .trio::after {
@@ -87,7 +95,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--gray);
+  background-color: var(--grey2);
   bottom: -144px;
 }
 
@@ -110,18 +118,19 @@
 }
 
 .coment1 {
-  color: var(--gray);
-  font-family: "Cormorant Garamond";
+  // color: var(--grey2);
+  font-family: "Cormorant Infant";
   font-size: 16px;
   font-weight: 500;
   line-height: 1.56;
+  text-transform: uppercase;
 }
 
 .coment2 {
-  color: var(--gray);
+  // color: var(--grey2);
   font-size: 14px;
   font-weight: 400;
-  line-height: 1.57;
+  line-height: 1.57143;
   margin-top: -3px;
 }
 

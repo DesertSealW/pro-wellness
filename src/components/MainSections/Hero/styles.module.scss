@@ -7,37 +7,36 @@
   width: 100%;
   //пока добавил +21 потом убрать
   height: calc(100vh - 120px + 21px);
-  background-image: url("./../../../assets/img/mainHero/div.t396__carrier.png");
+  background-image: url("./../../../assets/img/mainHero/heroN.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
 }
 
-.root::before {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
-  background-color: rgba(0, 0, 0, 0.5);
-}
+// .root::before {
+//   content: "";
+//   position: absolute;
+//   top: 0;
+//   right: 0;
+//   bottom: 0;
+//   left: 0;
+//   background-color: rgba(0, 0, 0, 0.5);
+// }
 
 .title {
   position: inherit;
   text-align: center;
   font-size: 110px;
-
   line-height: 1;
-  letter-spacing: 1px;
   margin-top: -1px;
   margin-bottom: 15px;
+  text-transform: uppercase;
 }
 
 .strFirst {
   display: block;
   background-color: var(--dark);
-  color: var(--gold);
+  color: var(--brown);
   padding: 8px 0 12px 0;
 }
 
@@ -57,13 +56,13 @@
 
 .creating {
   position: inherit;
-  width: 330px;
+  // width: 351px;
+  width: 425px;
   color: var(--light);
   text-align: center;
   font-size: 26px;
-  line-height: 1.15;
+  line-height: 1.15385;
   margin: 0 auto 28px auto;
-  // transform: scale(0.97);
   z-index: 5;
 }
 
@@ -78,4 +77,8 @@
   font-size: 14px;
   margin: 10px auto 0 auto;
   z-index: 5;
+}
+
+h1 {
+  text-transform: uppercase; /* Заглавные буквы */
 }

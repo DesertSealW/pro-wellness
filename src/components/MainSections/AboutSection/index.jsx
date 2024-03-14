@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import img from "assets/img/mainAboutSection/div.tn-atom.png";
+import img from "assets/img/mainAboutSection/aboutN.png";
 import styles from "./styles.module.scss";
 
 const AboutSection = () => {
@@ -19,15 +19,27 @@ const AboutSection = () => {
       <div className={styles.noLeftBorder}>
         <div className={styles.wrapper}>
           <div className={styles.pict}>
-            <img src={img} alt="Дерево на фоне здания" />
+            <img
+              src={img}
+              className={styles.pict}
+              alt="Дерево на фоне здания"
+            />
           </div>
           <div className={styles.description}>
-            <p>Архитектура с характером!</p>
+            <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
             <p>
-              Создаем уникальную архитектуру и интерьеры, являющиеся синтезом
-              индивидуальности заказчика и  нашего представления о  прекрасном.
+              Качество нашей работы сформировано многолетним опытом, и мы точно
+              знаем:
             </p>
-            <p>Позвольте себе индивидуальность!</p>
+            <ul className={styles.list}>
+              <li className={styles.item}>
+                Что такое рабочий велнес или фитнес проект
+              </li>
+              <li className={styles.item}>Как оптимизировать затраты</li>
+              <li className={styles.item}>
+                Какая концепция действительно работает
+              </li>
+            </ul>
           </div>
           <Link to={routeDevelopmentPage()}>
             <div className={styles.more}>УЗНАТЬ БОЛЬШЕ</div>

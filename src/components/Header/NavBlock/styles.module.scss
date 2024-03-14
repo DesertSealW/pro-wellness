@@ -28,8 +28,10 @@
   display: flex;
   justify-content: space-between;
   gap: 12px;
-
+  color: var(--light);
   font-size: 12px;
   font-weight: 400;
+  line-height: 1.58333;
+  white-space: nowrap;
   margin-left: 4px;
 }

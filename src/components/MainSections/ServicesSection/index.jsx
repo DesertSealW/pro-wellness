@@ -8,19 +8,17 @@ const ServicesSection = () => {
           <h2 className={styles.services}>УСЛУГИ</h2>
           <div className={styles.kinds}>
             <div className={styles.line}>
-              <div className={styles.tip}>АРХИТЕКТУРА</div>
+              <div className={styles.tip}>КОНЦЕПЦИЯ</div>
               <div className={styles.description}>
-                Индивидуальное проектирование эксклюзивных домов и резиденций
+                Комплексное проектирование велнес, фитнес и объектов
+                здравоохранения
               </div>
-              <div className={styles.request}>ОСТАВИТЬ ЗАПРОС</div>
+              <div className={styles.request}>узнать больше</div>
             </div>
             <div className={`${styles.line} ${styles.bottomLine}`}>
-              <div className={styles.tip}>ИНТЕРЬЕР</div>
-              <div className={styles.description}>
-                Проектирование интерьеров премиум- класса в эксклюзивной
-                стилистике
-              </div>
-              <div className={styles.request}>ОСТАВИТЬ ЗАПРОС</div>
+              <div className={styles.tip}>АРХИТЕКТУРА</div>
+              <div className={styles.description}>Создание концепции</div>
+              <div className={styles.request}>узнать больше</div>
             </div>
           </div>
         </div>
