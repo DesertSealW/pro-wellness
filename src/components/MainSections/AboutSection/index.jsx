@@ -10,10 +10,10 @@ const AboutSection = () => {
       <div className={styles.container}>
         <div className={styles.performance}>
           <div className={styles.philosophy}>НАША ФИЛОСОФИЯ</div>
-          <h1 className={styles.title}>
+          <h2 className={styles.title}>
             <span className={styles.free}>НЕМНОГО</span>
             <span className={styles.overlap}>О НАС</span>
-          </h1>
+          </h2>
         </div>
       </div>
       <div className={styles.noLeftBorder}>

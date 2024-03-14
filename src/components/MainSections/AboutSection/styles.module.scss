@@ -2,7 +2,7 @@
 
 .root {
   background: var(--dark);
-  padding: 126px 0 0 0;
+  padding: 126px 0 107px 0;
 }
 
 .noLeftBorder {
@@ -71,18 +71,17 @@
 
 .more {
   position: relative;
-  margin: 368px 15px 0 auto;
+  margin: 425px 5px 0 auto;
   color: var(--gray);
   width: max-content;
   font-size: 12px;
-  letter-spacing: -1px;
 }
 
 .more::after {
   content: "";
   position: absolute;
   display: block;
-  width: 105px;
+  width: 110%;
   height: 1px;
   background-color: var(--gray);
   bottom: -10px;

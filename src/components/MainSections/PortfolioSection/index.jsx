@@ -13,7 +13,7 @@ const PortfolioSection = () => {
           <div className={styles.left}>
             <div className={styles.works}>НАШИ ВЫПОЛНЕННЫЕ РАБОТЫ</div>
             <Link to={routeDevelopmentPage()}>
-              <div className={styles.title}>ПОРТФОЛИО</div>
+              <h2 className={styles.title}>ПОРТФОЛИО</h2>
             </Link>
           </div>
           <div className={styles.right}>

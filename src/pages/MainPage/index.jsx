@@ -2,6 +2,8 @@ import Hero from "components/MainSections/Hero";
 import routeMain from "./routes";
 import PortfolioSection from "components/MainSections/PortfolioSection";
 import AboutSection from "components/MainSections/AboutSection";
+import ServicesSection from "components/MainSections/ServicesSection";
+import DiscussionSection from "components/MainSections/DiscussionSection";
 
 import "./styles.scss";
 
@@ -11,6 +13,8 @@ const MainPage = () => {
       <Hero />
       <PortfolioSection />
       <AboutSection />
+      <ServicesSection />
+      <DiscussionSection />
     </>
   );
 };

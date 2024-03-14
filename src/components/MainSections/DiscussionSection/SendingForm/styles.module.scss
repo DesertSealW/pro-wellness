@@ -1,0 +1,51 @@
+@import "global/styles/global";
+
+.formContainer {
+  display: flex;
+  flex-direction: row;
+  padding: 88px 82px 100px 82px;
+  background: var(--light);
+}
+
+.formField {
+  display: flex;
+  flex-direction: column;
+  width: 440px;
+  width: 440px;
+  margin: 15px 20px 0 15px;
+}
+
+.formField p {
+  font-family: "Cormorant Garamond";
+  font-size: 16px;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.formField input {
+  margin-top: 4px;
+  height: 60px;
+  border-bottom: 1px solid var(--gray);
+}
+
+label {
+  margin-bottom: 5px;
+}
+
+.submitButton {
+  //   font-family: Inter;
+  font-size: 11.438px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  height: fit-content;
+  background-color: var(--light);
+  color: var(--gray);
+  border: 1px solid var(--gray);
+  padding: 10px 20px;
+  margin: auto 0 0 18px;
+}
+
+.error {
+  border: 1px solid red;
+}
