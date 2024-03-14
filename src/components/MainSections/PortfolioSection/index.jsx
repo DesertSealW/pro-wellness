@@ -39,7 +39,11 @@ const PortfolioSection = () => {
               </div>
             </div>
             <div>
-              <img src={link3} alt="ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВО" />
+              <img
+                src={link3}
+                className={styles.smolImg}
+                alt="ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВО"
+              />
               <div className={styles.coment1}>
                 ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВО
               </div>
