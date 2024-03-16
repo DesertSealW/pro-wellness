@@ -23,19 +23,14 @@
   flex-direction: column;
 }
 
-.line {
+.kinds {
   position: relative;
-  display: grid;
-  grid-template-columns: 3fr 4fr 2fr;
-  gap: 5px;
-  margin: 33px 0px 10px 0px;
-  color: var(--grey3);
 }
 
-.line:before {
+.kinds::after {
   content: "";
   position: absolute;
-  top: -22px;
+  top: 222px;
   left: 0;
   display: block;
   width: 100%;

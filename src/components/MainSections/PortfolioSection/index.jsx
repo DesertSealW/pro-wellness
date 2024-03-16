@@ -8,7 +8,8 @@ import link3 from "assets/img/mainPortfolioSection/Link3N.png";
 const PortfolioSection = () => {
   return (
     <section className={styles.root}>
-      <div className={styles.container}>
+      {/* <div className={styles.container}> */}
+      <div className="container">
         <div className={styles.performance}>
           <div className={styles.left}>
             <div className={styles.works}>НАШИ ВЫПОЛНЕННЫЕ РАБОТЫ</div>

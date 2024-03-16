@@ -13,7 +13,8 @@ const Header = () => {
 
   return (
     <header className={styles.root}>
-      <div className={styles.container}>
+      {/* <div className={styles.container}> */}
+      <div className="container">
         <div className={styles.wrapper}>
           <NavBlock pathname={location.pathname} />
           <div className={styles.logo}>

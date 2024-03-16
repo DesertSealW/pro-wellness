@@ -7,7 +7,8 @@ import styles from "./styles.module.scss";
 const AboutSection = () => {
   return (
     <section className={styles.root}>
-      <div className={styles.container}>
+      {/* <div className={styles.container}> */}
+      <div className="container">
         <div className={styles.performance}>
           <div className={styles.philosophy}>НАША ФИЛОСОФИЯ</div>
           <h2 className={styles.title}>
@@ -16,6 +17,8 @@ const AboutSection = () => {
           </h2>
         </div>
       </div>
+      <div className={styles.content}></div>
+
       <div className={styles.noLeftBorder}>
         <div className={styles.wrapper}>
           <div className={styles.pict}>
@@ -25,25 +28,27 @@ const AboutSection = () => {
               alt="Дерево на фоне здания"
             />
           </div>
-          <div className={styles.description}>
-            <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
-            <p>
-              Качество нашей работы сформировано многолетним опытом, и мы точно
-              знаем:
-            </p>
-            <ul className={styles.list}>
-              <li className={styles.item}>
-                Что такое рабочий велнес или фитнес проект
-              </li>
-              <li className={styles.item}>Как оптимизировать затраты</li>
-              <li className={styles.item}>
-                Какая концепция действительно работает
-              </li>
-            </ul>
+          <div className={styles.right}>
+            <div className={styles.description}>
+              <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
+              <p>
+                Качество нашей работы сформировано многолетним опытом, и мы
+                точно знаем:
+              </p>
+              <ul className={styles.list}>
+                <li className={styles.item}>
+                  Что такое рабочий велнес или фитнес проект
+                </li>
+                <li className={styles.item}>Как оптимизировать затраты</li>
+                <li className={styles.item}>
+                  Какая концепция действительно работает
+                </li>
+              </ul>
+            </div>
+            <Link className={styles.more} to={routeDevelopmentPage()}>
+              УЗНАТЬ БОЛЬШЕ
+            </Link>
           </div>
-          <Link to={routeDevelopmentPage()}>
-            <div className={styles.more}>УЗНАТЬ БОЛЬШЕ</div>
-          </Link>
         </div>
       </div>
     </section>

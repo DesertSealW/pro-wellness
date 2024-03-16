@@ -12,7 +12,8 @@ const DiscussionSection = () => {
         Расскажите нам о своей идее, и мы скоро свяжемся с вами
       </p>
       <div className={styles.wrapper}>
-        <div className={styles.container}>
+        {/* <div className={styles.container}> */}
+        <div className="container">
           <SendingForm />
         </div>
       </div>
