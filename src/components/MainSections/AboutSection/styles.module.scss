@@ -1,8 +1,11 @@
-@import "global/styles/global";
+// @import "global/styles/global";
 
 .root {
   background: var(--dark);
-  padding: 126px 0 107px 0;
+  // clamp(100px, calc(8.625rem + ((1vw - 19.2px) * 5.9375)), 138px)
+
+  padding: clamp(74px, calc(7.8125rem + ((1vw - 19.2px) * 7.9688)), 125px) 0
+    clamp(100px, calc(6.6875rem + ((1vw - 19.2px) * 1.0938)), 107px) 0;
 }
 
 .performance {
@@ -16,8 +19,10 @@
 .philosophy {
   font-size: 12px;
   color: var(--grey3);
-  line-height: 1.3;
-  margin-top: 5px;
+  line-height: calc(1.1875rem + ((1vw - 19.2px) * 0.5313));
+  font-weight: 400;
+  // margin-top: 5px;
+  margin-top: clamp(5px, calc(0.3125rem + ((1vw - 19.2px) * -4.375)), 33px);
   text-transform: uppercase;
 }
 
@@ -25,8 +30,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-size: 90px;
-  line-height: 0.8;
+  // font-size: 90px;
+  font-size: clamp(60px, calc(5.625rem + ((1vw - 19.2px) * 4.6875)), 90px);
+  // line-height: 0.8;
+  line-height: calc(4.5rem + ((1vw - 19.2px) * 1.875));
   margin-left: 9px;
   text-transform: uppercase;
 }
@@ -49,34 +56,66 @@
   flex-direction: row;
 }
 
-.pict {
-  height: 450px;
-  width: 1344px;
-  object-fit: cover;
-}
+// .pict {
+//   // height: 450px;
+//   height: calc(28.125rem + ((1vw - 19.2px) * 17.1875));
+//   // width: 1344px;
+//   width: clamp(890px, calc(84rem + ((1vw - 19.2px) * 70.9375)), 1344px);
+//   object-fit: cover;
+// }
 
 .right {
-  width: calc(95vw - 1344px);
+  height: 100%;
   display: grid;
   grid-template-rows: 5fr 1fr;
   gap: 10px;
+  margin-left: auto;
+  // width: 476px;
+  width: clamp(339px, calc(29.75rem + ((1vw - 19.2px) * 21.4063)), 476px);
 }
 
 .description {
   display: flex;
   flex-direction: column;
-  font-size: 16px;
+  // font-size: 16px;
+  font-size: clamp(14px, calc(1rem + ((1vw - 19.2px) * 0.3125)), 16px);
   font-weight: 400;
-  gap: 24px;
-  width: 306px;
+  // gap: 24px;
+  gap: clamp(19px, calc(1.5rem + ((1vw - 19.2px) * 0.7813)), 24px);
+  // width: 306px;
+  width: clamp(225px, calc(19.125rem + ((1vw - 19.2px) * 12.6563)), 306px);
   color: var(--grey3);
-  margin: 0 auto 0 57px;
-  line-height: 1.5625;
+  margin: 0 auto 0
+    clamp(39px, calc(3.5625rem + ((1vw - 19.2px) * 2.8125)), 57px);
+  // line-height: 1.5625;
+  line-height: clamp(16.8px, calc(1.5625rem + ((1vw - 19.2px) * 1.2812)), 25px);
+}
+.content {
+  // height: 450px;
+  height: clamp(340px, calc(28.125rem + ((1vw - 19.2px) * 17.1875)), 450px);
+}
+.wrapper {
+  height: 100%;
+  background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
+  background-repeat: no-repeat;
+  background-size: 70vw 100%;
+  background-position: left center;
+}
+
+.descriptionNew {
+  margin-left: auto;
+  width: 500px;
+  color: aqua;
+  background-color: burlywood;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
 }
 
 .more {
   position: relative;
-  margin: auto 5px 10px auto;
+  margin: auto 5px 0px auto;
+  padding-bottom: 10px;
   color: var(--grey3);
   width: max-content;
   font-size: 12px;
@@ -89,7 +128,7 @@
   width: 110%;
   height: 1px;
   background-color: var(--grey);
-  bottom: -10px;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
 }
@@ -97,9 +136,51 @@
 .list {
   display: flex;
   flex-direction: column;
-  gap: 0px;
+  // gap: 0px;
+  gap: clamp(0px, calc(0rem + ((1vw - 19.2px) * -1.875)), 12px);
   margin-left: 20px;
 }
 .item {
   list-style-type: disc;
+}
+
+@media (max-width: 1280px) {
+  .root {
+    //  padding: 74px 0 100px 0;
+  }
+  .philosophy {
+    font-weight: 300;
+    // line-height: 15.6px; //1.3;
+    // margin-top: 33px;
+  }
+  .title {
+    // font-size: 60px;
+    // line-height: 60px; //1.0
+  }
+  .pict {
+    // height: 340px;
+    // width: 890px;
+  }
+  .description {
+    // font-size: 14px;
+    font-weight: 300;
+    // gap: 19px;
+    // width: 225px;
+    // margin: 0 auto 0 39px;
+    // line-height: 16.8;
+  }
+  .list {
+    //  gap: 12px;
+  }
+  .content {
+    // height: 340px;
+  }
+  .wrapper {
+    background-image: url("./../../../assets/img/mainAboutSection/1280about.png");
+    background-size: 69.53125vw 100%;
+  }
+
+  .right {
+    // width: 339px;
+  }
 }

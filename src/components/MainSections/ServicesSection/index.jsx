@@ -9,13 +9,13 @@ const ServicesSection = () => {
         <div className={styles.wrapper}>
           <h2 className={styles.services}>УСЛУГИ</h2>
           <div className={styles.kinds}>
-            <ServiceLine tip="АРХИТЕКТУРА" description="Создание концепции" />
             <ServiceLine
               tip="КОНЦЕПЦИЯ"
               description="Комплексное проектирование велнес, фитнес и объектов
                 здравоохранения"
               className={styles.line}
             />
+            <ServiceLine tip="АРХИТЕКТУРА" description="Создание концепции" />
           </div>
         </div>
       </div>

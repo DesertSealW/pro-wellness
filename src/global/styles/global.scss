@@ -1,11 +1,6 @@
 @import "./variables";
 @import "./fonts";
 
-.container {
-  width: 90vw;
-  margin: 0 auto;
-}
-
 body {
   font-family: Montserrat;
   font-weight: 300;
@@ -20,4 +15,16 @@ h6 {
   font-family: "Cormorant Infant";
   // font-family: "Cormorant Garamond";
   font-weight: 300;
+}
+
+.container {
+  // width: 90vw;
+  width: clamp(1180px, calc(108rem + ((1vw - 19.2px) * 85.625)), 1728px);
+  margin: 0 auto;
+}
+
+@media (max-width: 1280px) {
+  .container {
+    width: 1180px; //92,1875vw
+  }
 }

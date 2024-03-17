@@ -3,7 +3,9 @@
 .root {
   background-color: var(--dark);
   color: var(--light);
-  padding: 51px 0 32px 0;
+  // padding: 51px 0 32px 0;
+  padding: calc(3.1875rem + ((1vw - 19.2px) * 2.1875)) 0
+    calc(2rem + ((1vw - 19.2px) * -3.2812)) 0;
 }
 
 .wrapper {
@@ -32,4 +34,10 @@
 .logo {
   // margin-left: 140px;
   justify-self: center;
+}
+
+@media (max-width: 1280px) {
+  .root {
+    padding: 37px 0 53px 0;
+  }
 }

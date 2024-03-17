@@ -1,17 +1,16 @@
-// &:last-child {
-//   margin-right: 0;
-
 .social {
   display: flex;
   flex-direction: row;
-  gap: 25px;
+  // gap: 25px;
+  gap: calc(1.5625rem + ((1vw - 19.2px) * -0.4687));
   align-self: center;
 }
 
 .social img {
   display: flex;
   flex-direction: row;
-  width: 25px;
+  width: calc(1.5625rem + ((1vw - 19.2px) * 0.1563)); //25px;
+
   border-radius: 50%;
 }
 
@@ -22,6 +21,17 @@
 .phone {
   // border-radius: 50%;
   background: white;
-  width: 25px;
-  height: 25px;
+  width: calc(1.5625rem + ((1vw - 19.2px) * 0.1563)); //25px
+  height: calc(1.5625rem + ((1vw - 19.2px) * 0.1563)); //25px;
+}
+
+@media (max-width: 1280px) {
+  .social img {
+    // width: 25px;
+    // gap: 25px;
+  }
+  .phone {
+    // width: 24px;
+    // height: 24px;
+  }
 }

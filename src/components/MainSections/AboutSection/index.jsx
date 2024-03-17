@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import img from "assets/img/mainAboutSection/aboutN.png";
+// import about1920 from "assets/img/mainAboutSection/1920about.png";
+// import about1280 from "assets/img/mainAboutSection/1280about.png";
 import styles from "./styles.module.scss";
 
 const AboutSection = () => {
@@ -17,40 +18,51 @@ const AboutSection = () => {
           </h2>
         </div>
       </div>
-      <div className={styles.content}></div>
 
-      <div className={styles.noLeftBorder}>
+      <div className={styles.content}>
         <div className={styles.wrapper}>
-          <div className={styles.pict}>
-            <img
-              src={img}
-              className={styles.pict}
-              alt="Дерево на фоне здания"
-            />
-          </div>
-          <div className={styles.right}>
-            <div className={styles.description}>
-              <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
-              <p>
-                Качество нашей работы сформировано многолетним опытом, и мы
-                точно знаем:
-              </p>
-              <ul className={styles.list}>
-                <li className={styles.item}>
-                  Что такое рабочий велнес или фитнес проект
-                </li>
-                <li className={styles.item}>Как оптимизировать затраты</li>
-                <li className={styles.item}>
-                  Какая концепция действительно работает
-                </li>
-              </ul>
+          <div className="container">
+            <div className={styles.right}>
+              <div className={styles.description}>
+                <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
+                <p>
+                  Качество нашей работы сформировано многолетним опытом, и мы
+                  точно знаем:
+                </p>
+                <ul className={styles.list}>
+                  <li className={styles.item}>
+                    Что такое рабочий велнес или фитнес проект
+                  </li>
+                  <li className={styles.item}>Как оптимизировать затраты</li>
+                  <li className={styles.item}>
+                    Какая концепция действительно работает
+                  </li>
+                </ul>
+              </div>
+              <Link className={styles.more} to={routeDevelopmentPage()}>
+                УЗНАТЬ БОЛЬШЕ
+              </Link>
             </div>
-            <Link className={styles.more} to={routeDevelopmentPage()}>
-              УЗНАТЬ БОЛЬШЕ
-            </Link>
           </div>
         </div>
       </div>
+
+      {/* <div className={styles.noLeftBorder}>
+        <div className={styles.wrapper}>
+          <div className={styles.pict}>
+            <picture>
+              <source srcset={about1920} media="(max-width: 1280px)" />
+              <source srcset={about1280} media="(max-width: 800px)" />
+              <img
+                src={about1920}
+                className={styles.pict}
+                alt="Спортивный зал"
+              />
+            </picture>
+          </div>
+          
+        </div>
+      </div> */}
     </section>
   );
 };

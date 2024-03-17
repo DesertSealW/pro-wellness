@@ -1,9 +1,12 @@
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 import { Link } from "react-router-dom";
 import styles from "./styles.module.scss";
-import link1 from "assets/img/mainPortfolioSection/Link1N.png";
-import link2 from "assets/img/mainPortfolioSection/Link2NN.png";
-import link3 from "assets/img/mainPortfolioSection/Link3N.png";
+import link1_1920 from "assets/img/mainPortfolioSection/1920Link1.png";
+import link2_1920 from "assets/img/mainPortfolioSection/1920Link2.png";
+import link3_1920 from "assets/img/mainPortfolioSection/1920Link3.png";
+import link1_1280 from "assets/img/mainPortfolioSection/1280Link1.png";
+import link2_1280 from "assets/img/mainPortfolioSection/1280Link2.png";
+import link3_1280 from "assets/img/mainPortfolioSection/1280Link3.png";
 
 const PortfolioSection = () => {
   return (
@@ -25,11 +28,15 @@ const PortfolioSection = () => {
         </div>
         <div className={styles.trio}>
           <div>
-            <img
-              src={link1}
-              className={styles.bigImg}
-              alt="Банный комплекс 'Карелия'"
-            />
+            <picture>
+              <source srcset={link1_1920} media="(max-width: 1280px)" />
+              <source srcset={link1_1280} media="(max-width: 800px)" />
+              <img
+                src={link1_1920}
+                className={styles.bigImg}
+                alt="Банный комплекс 'Карелия"
+              />
+            </picture>
             <div className={styles.coment1}>Банный комплекс "Карелия"</div>
             <div className={styles.coment2}>
               Здания, фасады, благоустройство
@@ -37,22 +44,30 @@ const PortfolioSection = () => {
           </div>
           <div className={styles.two}>
             <div>
-              <img
-                src={link2}
-                className={styles.smolImg}
-                alt="Санаторий Таежный"
-              />
+              <picture>
+                <source srcset={link2_1920} media="(max-width: 1280px)" />
+                <source srcset={link2_1280} media="(max-width: 800px)" />
+                <img
+                  src={link2_1920}
+                  className={styles.smolImg}
+                  alt="Санаторий Таежный"
+                />
+              </picture>
               <div className={styles.coment1}>Санаторий Таежный</div>
               <div className={styles.coment2}>
                 Здания, фасады, благоустройство
               </div>
             </div>
             <div>
-              <img
-                src={link3}
-                className={styles.smolImg}
-                alt="ВИЛЛА С ГОЛЬФ-ПОЛЕМ В ЗАВИДОВОИнститут им. Хлопина"
-              />
+              <picture>
+                <source srcset={link3_1920} media="(max-width: 1280px)" />
+                <source srcset={link3_1280} media="(max-width: 800px)" />
+                <img
+                  src={link3_1920}
+                  className={styles.smolImg}
+                  alt="Институт им. Хлопина"
+                />
+              </picture>
               <div className={styles.coment1}>Институт им. Хлопина</div>
               <div className={styles.coment2}>
                 Здания, фасады, благоустройство
