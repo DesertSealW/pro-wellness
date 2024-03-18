@@ -46,23 +46,36 @@
   color: var(--brown);
 }
 
-.noLeftBorder {
-  margin: 0 auto 0 0;
-  width: 95vw;
-}
-
 .wrapper {
+  position: relative;
   display: flex;
   flex-direction: row;
 }
 
-// .pict {
-//   // height: 450px;
-//   height: calc(28.125rem + ((1vw - 19.2px) * 17.1875));
-//   // width: 1344px;
-//   width: clamp(890px, calc(84rem + ((1vw - 19.2px) * 70.9375)), 1344px);
-//   object-fit: cover;
+// .wrapper {
+//   height: 100%;
+//   background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
+//   background-repeat: no-repeat;
+//   background-size: 70vw 100%;
+//   background-position: left center;
 // }
+// .wrapper {
+//   background-image: url("./../../../assets/img/mainAboutSection/1280about.png");
+//   background-size: 69.53125vw 100%;
+// }
+
+.wrapper:before {
+  content: "";
+  background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 450px;
+  // width: 70vw;
+  width: var(--pseudo-element-width);
+  position: absolute;
+  top: 0;
+  left: 0;
+}
 
 .right {
   height: 100%;
@@ -85,31 +98,16 @@
   // width: 306px;
   width: clamp(225px, calc(19.125rem + ((1vw - 19.2px) * 12.6563)), 306px);
   color: var(--grey3);
-  margin: 0 auto 0
-    clamp(39px, calc(3.5625rem + ((1vw - 19.2px) * 2.8125)), 57px);
+  margin: 0 auto;
+  padding-left: clamp(39px, calc(3.5625rem + ((1vw - 19.2px) * 2.8125)), 57px);
+
   // line-height: 1.5625;
+
   line-height: clamp(16.8px, calc(1.5625rem + ((1vw - 19.2px) * 1.2812)), 25px);
 }
 .content {
   // height: 450px;
   height: clamp(340px, calc(28.125rem + ((1vw - 19.2px) * 17.1875)), 450px);
-}
-.wrapper {
-  height: 100%;
-  background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
-  background-repeat: no-repeat;
-  background-size: 70vw 100%;
-  background-position: left center;
-}
-
-.descriptionNew {
-  margin-left: auto;
-  width: 500px;
-  color: aqua;
-  background-color: burlywood;
-  font-size: 16px;
-  display: flex;
-  flex-direction: column;
 }
 
 .more {
@@ -174,10 +172,6 @@
   }
   .content {
     // height: 340px;
-  }
-  .wrapper {
-    background-image: url("./../../../assets/img/mainAboutSection/1280about.png");
-    background-size: 69.53125vw 100%;
   }
 
   .right {

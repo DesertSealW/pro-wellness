@@ -4,8 +4,27 @@ import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 // import about1920 from "assets/img/mainAboutSection/1920about.png";
 // import about1280 from "assets/img/mainAboutSection/1280about.png";
 import styles from "./styles.module.scss";
+import { useEffect, useRef, useState } from "react";
+// import { useEffect, useRef } from "react";
 
 const AboutSection = () => {
+  const blockRef = useRef(null);
+  const [distance, setDistance] = useState("70vw");
+  useEffect(() => {
+    const handleResize = () => {
+      if (blockRef.current) {
+        const { left } = blockRef.current.getBoundingClientRect();
+        console.log(left);
+        setDistance(`${left}px`);
+      }
+    };
+    handleResize(); // Вызываем функцию при монтировании компонента
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
   return (
     <section className={styles.root}>
       {/* <div className={styles.container}> */}
@@ -20,10 +39,13 @@ const AboutSection = () => {
       </div>
 
       <div className={styles.content}>
-        <div className={styles.wrapper}>
+        <div
+          style={{ "--pseudo-element-width": distance }}
+          className={styles.wrapper}
+        >
           <div className="container">
             <div className={styles.right}>
-              <div className={styles.description}>
+              <div ref={blockRef} className={styles.description}>
                 <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
                 <p>
                   Качество нашей работы сформировано многолетним опытом, и мы
@@ -46,23 +68,6 @@ const AboutSection = () => {
           </div>
         </div>
       </div>
-
-      {/* <div className={styles.noLeftBorder}>
-        <div className={styles.wrapper}>
-          <div className={styles.pict}>
-            <picture>
-              <source srcset={about1920} media="(max-width: 1280px)" />
-              <source srcset={about1280} media="(max-width: 800px)" />
-              <img
-                src={about1920}
-                className={styles.pict}
-                alt="Спортивный зал"
-              />
-            </picture>
-          </div>
-          
-        </div>
-      </div> */}
     </section>
   );
 };

@@ -23,7 +23,7 @@ const SocialBlock = (pathname) => {
         <img src={viber_black} alt="viber icon" />
       </li>
       <li>
-        <img src={phone_black} alt="phone icon" />
+        <img src={phone_black} className={styles.phone} alt="phone icon" />
       </li>
     </ul>
   );

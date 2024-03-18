@@ -28,3 +28,9 @@ h6 {
     width: 1180px; //92,1875vw
   }
 }
+
+@media (max-width: 320px) {
+  .container {
+    width: 280px; //92,1875vw
+  }
+}

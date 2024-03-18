@@ -1,10 +1,8 @@
-@import "global/styles/global";
-
 .root {
   background-color: var(--light);
   // padding: 126px 0 166px 0;
-  padding: calc(7.875rem + ((1vw - 19.2px) * 4.0625)) 0
-    calc(10.375rem + ((1vw - 19.2px) * 10)) 0;
+  padding: clamp(100px, calc(7.875rem + ((1vw - 19.2px) * 4.0625)), 126px) 0
+    clamp(102px, calc(10.375rem + ((1vw - 19.2px) * 10)), 166px) 0;
 }
 
 .performance {
@@ -87,7 +85,7 @@
   color: var(--grey2);
   font-family: "Cormorant Infant";
   // font-size: 64px;
-  font-size: calc(4rem + ((1vw - 19.2px) * 2.5));
+  font-size: clamp(48px, calc(4rem + ((1vw - 19.2px) * 2.5)), 64px);
   // line-height: 1.54688;
   line-height: calc(6.1875rem + ((1vw - 19.2px) * 7.9688));
   text-transform: uppercase;
@@ -98,7 +96,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   // gap: 76px;
-  gap: calc(4.75rem + ((1vw - 19.2px) * 8.75));
+  gap: clamp(20px, calc(4.75rem + ((1vw - 19.2px) * 8.75)), 76px);
   color: var(--grey2);
 }
 
@@ -110,23 +108,23 @@
   height: 1px;
   background-color: var(--grey2);
   // bottom: -167px;
-  bottom: calc(-10.4375rem + ((1vw - 19.2px) * -10));
+  bottom: clamp(-167px, calc(-10.4375rem + ((1vw - 19.2px) * -10)), -103px);
 }
 
 .two {
   display: grid;
   grid-template-rows: 1fr 1fr;
   // gap: 31px;
-  gap: calc(1.9375rem + ((1vw - 19.2px) * 1.0938));
+  gap: clamp(24px, calc(1.9375rem + ((1vw - 19.2px) * 1.0938)), 31px);
 }
 
 .bigImg {
   // height: 820px;
-  height: calc(51.25rem + ((1vw - 19.2px) * 20.9375));
+  height: clamp(686px, calc(51.25rem + ((1vw - 19.2px) * 20.9375)), 820px);
 }
 .smolImg {
   // height: 360px;
-  height: calc(22.5rem + ((1vw - 19.2px) * 8.5938));
+  height: clamp(305px, calc(22.5rem + ((1vw - 19.2px) * 8.5938)), 360px);
 }
 .smolImg,
 .bigImg {
@@ -158,12 +156,12 @@
   // line-height: 1.57143;
   line-height: calc(1.375rem + ((1vw - 19.2px) * 1.25));
   // margin-top: -3px;
-  margin-top: calc(-0.1875rem + ((1vw - 19.2px) * -1.7187));
+  margin-top: clamp(-3px, calc(-0.1875rem + ((1vw - 19.2px) * -1.7187)), 8px);
 }
 
 .trio img {
   // margin-bottom: 25px;
-  margin-bottom: calc(1.5625rem + ((1vw - 19.2px) * 2.0313));
+  margin-bottom: clamp(12px, calc(1.5625rem + ((1vw - 19.2px) * 2.0313)), 25px);
 }
 
 @media (max-width: 1280px) {
@@ -233,5 +231,29 @@
 
   .trio img {
     // margin-bottom: 12px;
+  }
+}
+
+@media (max-width: 320px) {
+  .performance {
+    display: flex;
+    flex-direction: column;
+  }
+  .right {
+    flex: 1;
+    order: 3;
+  }
+  .left {
+    flex-direction: column;
+    flex: 1;
+  }
+
+  .trio {
+    display: flex;
+    flex-direction: column;
+  }
+  .two {
+    display: flex;
+    flex-direction: column;
   }
 }
