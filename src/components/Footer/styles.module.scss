@@ -2,7 +2,7 @@
 
 .root {
   background: var(--light);
-  padding: clamp(75px, calc(4.6875rem + ((1vw - 19.2px) * -2.3437)), 90px) 0;
+  padding: clamp(69px, calc(4.6875rem + ((1vw - 19.2px) * 0.9375)), 75px) 0;
 }
 
 .wrapper {
@@ -28,58 +28,77 @@
   flex-direction: column;
 }
 .first {
-  width: 300px;
+  max-width: 300px;
+  width: 100%;
 }
 
 .first img {
-  width: clamp(200px, calc(18.3125rem + ((1vw - 19.2px) * 14.5313)), 293px);
-  margin-bottom: clamp(29px, calc(3.0625rem + ((1vw - 19.2px) * 3.125)), 49px);
+  max-width: 293px;
+  width: 100%;
+  margin-bottom: clamp(
+    49px,
+    calc(3.0625rem + ((1vw - 19.2px) * -0.9375)),
+    55px
+  );
 }
 
 .second {
   padding-left: clamp(
-    280px,
-    calc(41.5625rem + ((1vw - 19.2px) * 60.1563)),
-    665px
+    500px,
+    calc(40.9375rem + ((1vw - 19.2px) * 24.2188)),
+    655px
   );
 }
 
 .portfolio,
 .contacts {
   color: var(--brown);
-  font-size: clamp(10px, calc(0.875rem + ((1vw - 19.2px) * 0.625)), 14px);
-  font-weight: clamp(500px, calc(43.75rem + ((1vw - 19.2px) * 31.25)), 700px);
-  line-height: clamp(15px, calc(1.375rem + ((1vw - 19.2px) * 1.0938)), 22px);
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 22px;
   letter-spacing: 1px;
   margin-bottom: 7px;
 }
 
 .third {
-  padding-left: clamp(90px, calc(5.625rem + ((1vw - 19.2px) * -3.4375)), 112px);
+  padding-left: 90px;
+}
+
+.list li {
 }
 
 .fourth {
-  position: relative;
-  background: var(--light);
   margin-left: auto;
-  margin: -2px 13px auto auto;
-  color: (--grey3);
 }
 
-.fourth::after {
+.goTop {
+  position: relative;
+  background: var(--light);
+  margin: -2px 13px auto 100px;
+  padding-bottom: 10px;
+  color: var(--grey3);
+}
+
+.goTop::after {
   content: "";
   position: absolute;
   display: block;
-  width: 110%;
+  width: 130%;
   height: 1px;
   background-color: var(--grey3);
-  bottom: -10px;
+  bottom: -1px;
   left: 50%;
   transform: translateX(-50%);
+  transition: width 0.7s;
+}
+
+.goTop:hover::after {
+  width: 160%;
 }
 
 .item {
   color: var(--grey3);
+  white-space: nowrap;
 }
 
 @media (max-width: 1280px) {
@@ -95,18 +114,23 @@
     // font-size: 10px;
     // line-height: 10px;
     font-weight: 300;
+    letter-spacing: 1.3px;
+    margin-bottom: 3px;
   }
   .second {
     // padding-left: 280px;
   }
   .portfolio,
   .contacts {
-    // font-size: 10px;
-    // font-weight: 500;
-    // line-height: 15px;
-    letter-spacing: 0px;
+    margin-top: 2px;
+    margin-bottom: 11px;
   }
   .third {
     // padding-left: 112px;
+  }
+
+  .fourth {
+    margin-right: 11px;
+    letter-spacing: -1px;
   }
 }

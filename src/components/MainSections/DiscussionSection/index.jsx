@@ -4,7 +4,7 @@ import styles from "./styles.module.scss";
 
 const DiscussionSection = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       <h2 className={styles.title}>
         обсудим <span className={styles.gold}>ваш</span> проект?
       </h2>
@@ -17,7 +17,7 @@ const DiscussionSection = () => {
           <SendingForm />
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

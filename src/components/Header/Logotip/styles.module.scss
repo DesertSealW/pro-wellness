@@ -1,7 +1,5 @@
 .logo {
-  // width: 293px;
-  width: clamp(220px, calc(18.3125rem + ((1vw - 19.2px) * 11.4063)), 293px);
-  margin-bottom: -3px;
+  width: 293px;
 }
 
 @media (max-width: 1280px) {

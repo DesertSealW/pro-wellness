@@ -5,7 +5,7 @@
   color: var(--light);
   // padding: 51px 0 32px 0;
   padding: clamp(37px, calc(3.1875rem + ((1vw - 19.2px) * 2.1875)), 51px) 0
-    clamp(32px, calc(2rem + ((1vw - 19.2px) * -3.2812)), 53px) 0;
+    clamp(32px, calc(2rem + ((1vw - 19.2px) * -1.7187)), 43px) 0;
 }
 
 .wrapper {
@@ -42,7 +42,7 @@
 
 @media (max-width: 1280px) {
   .root {
-    padding: 37px 0 53px 0;
+    // padding: 37px 0 43px 0;
   }
 }
 

@@ -48,7 +48,7 @@ const Footer = () => {
               <Link to={routeDevelopmentPage()}>
                 <div className={styles.portfolio}>ПОРТФОЛИО</div>
               </Link>
-              <ul>
+              <ul className={styles.list}>
                 <li>
                   <Link to={routeDevelopmentPage()}>
                     <div className={styles.item}>КОНЦЕПЦИЯ</div>
@@ -66,7 +66,7 @@ const Footer = () => {
             <Link to={routeDevelopmentPage()}>
               <div className={styles.contacts}>КОНТАКТЫ</div>
             </Link>
-            <ul>
+            <ul className={styles.list}>
               <li>
                 <a className={styles.item} href="tel:+78124084151">
                   +7 (812) 408-4151
@@ -80,9 +80,11 @@ const Footer = () => {
             </ul>
           </div>
           {/* <div className={styles.fourth}>НАВЕРХ</div> */}
-          <button className={styles.fourth} onClick={scrollToTop}>
-            НАВЕРХ
-          </button>
+          <div className={styles.fourth}>
+            <button className={styles.goTop} onClick={scrollToTop}>
+              НАВЕРХ
+            </button>
+          </div>
         </div>
       </div>
     </div>

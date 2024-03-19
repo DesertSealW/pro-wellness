@@ -1,20 +1,18 @@
-// @import "global/styles/global";
-
 .root {
-  background: var(--dark);
-  //   padding-top: 120px;
-  padding-top: clamp(120px, calc(7.5rem + ((1vw - 19.2px) * -0.7812)), 125px);
+  //   background: var(--dark);
+  background: var(--lite);
+
+  padding-top: clamp(107px, calc(7.8125rem + ((1vw - 19.2px) * 2.8125)), 125px);
 }
 
 .title {
-  //   font-size: 72px;
-  font-size: clamp(60px, calc(4.5rem + ((1vw - 19.2px) * 1.875)), 72px);
-  //   line-height: 1.55556;
-  line-height: clamp(60px, calc(7rem + ((1vw - 19.2px) * 8.125)), 112px);
+  font-size: 72px;
+
+  line-height: clamp(72px, calc(7rem + ((1vw - 19.2px) * 6.25)), 112px);
   text-align: center;
   color: var(--grey3);
   //   margin-bottom: 4px;
-  margin-bottom: clamp(4px, calc(0.25rem + ((1vw - 19.2px) * -5.7812)), 41px);
+  margin-bottom: clamp(4px, calc(0.25rem + ((1vw - 19.2px) * -2.5)), 20px);
   text-transform: uppercase;
 }
 
@@ -28,33 +26,35 @@
   line-height: 1.5625;
   text-align: center;
   color: var(--grey3);
-  margin-bottom: 30px;
+  margin-bottom: clamp(22px, calc(1.375rem + ((1vw - 19.2px) * -1.7187)), 33px);
 }
 
 .wrapper {
   position: relative;
   display: block;
   //   height: 380px;
-  height: clamp(340px, calc(23.75rem + ((1vw - 19.2px) * 6.25)), 380px);
+  //   height: clamp(340px, calc(23.75rem + ((1vw - 19.2px) * 6.25)), 380px);
   background-image: url("./../../../assets/img/maigDiscussionSection/1920discussion.png");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
-  //   padding-top: 92px;
-  padding-top: clamp(50px, calc(5.75rem + ((1vw - 19.2px) * 6.5625)), 92px);
+  padding-top: 92px;
+  //   padding-top: clamp(50px, calc(5.75rem + ((1vw - 19.2px) * 6.5625)), 92px);
 }
 
 @media (max-width: 1280px) {
   .root {
     // padding-top: 125px;
   }
+
   .title {
     // font-size: 60px;
     // line-height: 60px;
     // margin-bottom: 41px;
   }
   .tell {
-    display: none;
+    // display: none;
+    font-weight: normal;
   }
 
   .wrapper {
