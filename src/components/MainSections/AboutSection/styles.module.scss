@@ -72,12 +72,13 @@
   background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
   background-repeat: no-repeat;
   background-size: cover;
-  height: clamp(448px, calc(28.125rem + ((1vw - 19.2px) * 0.3125)), 450px);
+  height: 450px;
   // width: 70vw;
   width: var(--pseudo-element-width);
   position: absolute;
   top: 0;
   left: 0;
+  z-index: -1;
 }
 
 .right {

@@ -20,6 +20,7 @@
     height: 100%;
     background-color: rgba(0, 0, 0, 0.2); /* Черный цвет с непрозрачностью */
   }
+  padding-bottom: 15px;
 }
 
 .title {
@@ -67,7 +68,8 @@
   text-align: center;
   font-size: 26px;
   line-height: 1.15385;
-  margin: 0 auto 28px auto;
+  //margin: 0 auto 28px auto; // По заданию Владимира делаю кнопку ниже
+  margin: 0 auto 45px auto;
   z-index: 5;
 }
 

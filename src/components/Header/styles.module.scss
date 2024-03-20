@@ -4,8 +4,8 @@
   background-color: var(--dark);
   color: var(--light);
   // padding: 51px 0 32px 0;
-  padding: clamp(37px, calc(3.1875rem + ((1vw - 19.2px) * 2.1875)), 51px) 0
-    clamp(32px, calc(2rem + ((1vw - 19.2px) * -1.7187)), 43px) 0;
+  // clamp(37px, calc(3.1875rem + ((1vw - 19.2px) * 2.1875)), 51px)
+  padding: 51px 0 clamp(32px, calc(2rem + ((1vw - 19.2px) * -1.7187)), 43px) 0;
 }
 
 .wrapper {
