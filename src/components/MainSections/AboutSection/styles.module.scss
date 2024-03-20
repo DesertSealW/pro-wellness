@@ -1,10 +1,31 @@
 .root {
   // background: var(--dark);
+
   background: var(--lite);
   padding: clamp(125px, calc(7.8125rem + ((1vw - 19.2px) * -4.0625)), 151px) 0
     clamp(100px, calc(6.6875rem + ((1vw - 19.2px) * 1.0938)), 107px) 0;
 }
 
+.exp {
+  display: flex;
+  flex-direction: row;
+  max-width: var(--prb-width);
+  width: 100%;
+  height: 450px;
+
+  border: 1px solid green;
+}
+.prb {
+  display: flex;
+  width: 100px;
+  height: 100px;
+  // top: 0;
+  // right: 0;
+  width: 100%;
+  object-position: center;
+  object-fit: cover;
+  background: red;
+}
 .performance {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;

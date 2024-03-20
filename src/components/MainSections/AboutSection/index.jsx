@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-// import about1920 from "assets/img/mainAboutSection/1920about.png";
+import about1920 from "assets/img/mainAboutSection/1920about.png";
 // import about1280 from "assets/img/mainAboutSection/1280about.png";
 import styles from "./styles.module.scss";
 import { useEffect, useRef, useState } from "react";
@@ -27,6 +27,10 @@ const AboutSection = () => {
 
   return (
     <section className={styles.root}>
+      <div style={{ "--prb-width": distance }} className="styles.exp">
+        Тут картинка
+        {/* <img className={styles.prb} src={about1920} alt="" /> */}
+      </div>
       {/* <div className={styles.container}> */}
       <div className="container">
         <div className={styles.performance}>
