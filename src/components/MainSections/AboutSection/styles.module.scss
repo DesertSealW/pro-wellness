@@ -2,8 +2,7 @@
   // background: var(--dark);
 
   background: var(--lite);
-  padding: clamp(125px, calc(7.8125rem + ((1vw - 19.2px) * -4.0625)), 151px) 0
-    clamp(100px, calc(6.6875rem + ((1vw - 19.2px) * 1.0938)), 107px) 0;
+  padding: clamp(125px, calc(7.8125rem + ((1vw - 19.2px) * -4.0625)), 151px) 0 clamp(100px, calc(6.6875rem + ((1vw - 19.2px) * 1.0938)), 107px) 0;
 }
 
 // .exp {
@@ -65,6 +64,7 @@
   position: relative;
   display: flex;
   flex-direction: row;
+  min-height: 450px;
 }
 
 .wrapper:before {
@@ -72,7 +72,7 @@
   background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 420px;
+  min-height: inherit;
   height: 100%;
   // width: 70vw;
   width: var(--pseudo-element-width);
@@ -89,7 +89,7 @@
   margin-left: auto;
   max-width: clamp(318px, calc(29.75rem + ((1vw - 19.2px) * 24.6875)), 476px);
   width: 100%;
-  max-height: 420px;
+  min-height: inherit;
   height: 100%;
 }
 
@@ -110,6 +110,7 @@
 
   line-height: clamp(16.8px, calc(1.5625rem + ((1vw - 19.2px) * 1.2812)), 25px);
 }
+
 .content {
   // height: 450px;
   height: clamp(340px, calc(28.125rem + ((1vw - 19.2px) * 17.1875)), 450px);
@@ -143,6 +144,7 @@
   gap: clamp(0px, calc(0rem + ((1vw - 19.2px) * -1.875)), 12px);
   margin-left: 20px;
 }
+
 .item {
   list-style-type: disc;
 }
@@ -151,39 +153,41 @@
   .root {
     //  padding: 74px 0 100px 0;
   }
+
   .philosophy {
     //21.03 по аналогии
     font-weight: 300;
     font-size: clamp(9px, calc(0.75rem + ((1vw - 12.8px) * 0.3261)), 12px);
-    line-height: clamp(
-      11.7px,
-      calc(0.975rem + ((1vw - 19.2px) * 0.6094)),
-      15.6px
-    );
+    line-height: clamp(11.7px,
+        calc(0.975rem + ((1vw - 19.2px) * 0.6094)),
+        15.6px);
   }
+
   .title {
     font-size: clamp(30px, calc(5.625rem + ((1vw - 12.8px) * 6.5217)), 90px);
     line-height: clamp(30px, calc(4.5rem + ((1vw - 12.8px) * 4.5652)), 72px);
   }
+
   .pict {
     // height: 340px;
     // width: 890px;
   }
+
   .description {
     font-size: clamp(12px, calc(0.875rem + ((1vw - 12.8px) * 0.2174)), 14px);
     font-weight: 400;
-    line-height: clamp(
-      14.4px,
-      calc(1.05rem + ((1vw - 12.8px) * 0.2609)),
-      16.8px
-    );
+    line-height: clamp(14.4px,
+        calc(1.05rem + ((1vw - 12.8px) * 0.2609)),
+        16.8px);
     // gap: 19px;
     // width: 225px;
     // margin: 0 auto 0 39px;
   }
+
   .list {
     //  gap: 12px;
   }
+
   .content {
     // height: 340px;
   }
@@ -191,17 +195,21 @@
   .right {
     // width: 339px;
   }
+
   .more {
     //меняется только толщина. Пока это сделаю на max-width: 800px
   }
 }
+
 @media (max-width: 1024px) {
   .root {
     padding-bottom: 255px;
   }
+
   .performance {
     grid-template-columns: 1fr 1fr;
   }
+
   .wrapper:before {
     content: "";
     background-image: url("./../../../assets/img/mainAboutSection/1920about.png");
@@ -237,6 +245,7 @@
   .description {
     font-weight: 300;
   }
+
   .more {
     font-weight: 300;
   }

@@ -15,7 +15,7 @@ import DevelopmentPage, {
 
 import Header from "components/Header";
 
-import "./styles.module.scss";
+// import 2x
 import Footer from "components/Footer";
 
 // import Footer from "components/Footer";

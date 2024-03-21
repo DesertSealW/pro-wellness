@@ -12,9 +12,9 @@ const ServiceLine = ({ tip, description }) => {
     <div className={styles.container}>
       <div className={styles.line}>
         <div className={styles.tip}>{tip}</div>
-        <div className={`${styles.description} ${styles.show1}`}>
+        <p className={`${styles.description} ${styles.show1}`}>
           {description}{" "}
-        </div>
+        </p>
 
         <button
           className={styles.request}
@@ -32,9 +32,9 @@ const ServiceLine = ({ tip, description }) => {
           </ModalWindow>
         )}
       </div>
-      <div className={`${styles.description} ${styles.show2}`}>
+      <p className={`${styles.description} ${styles.show2}`}>
         {description}
-      </div>
+      </p>
     </div>
   );
 };

@@ -1,10 +1,9 @@
-@import "global/styles/global";
+// @import "global/styles/global";
 
 .root {
   // background: var(--dark);
   background: var(--lite);
-  padding: clamp(138px, calc(8.625rem + ((1vw - 19.2px) * -22.8125)), 284px) 0
-    77px 0;
+  padding: clamp(80px, calc(7.5rem + ((1vw - 12.8px) * 4.3478)), 120px) 0 77px 0;
 }
 
 .wrapper {
@@ -16,11 +15,9 @@
   font-size: 74px;
   line-height: 1.154;
   letter-spacing: 1px;
-  margin-right: clamp(
-    99px,
-    calc(18.125rem + ((1vw - 19.2px) * 29.8438)),
-    290px
-  );
+  margin-right: clamp(99px,
+      calc(18.125rem + ((1vw - 19.2px) * 29.8438)),
+      290px);
   margin-top: clamp(-15px, calc(0.875rem + ((1vw - 19.2px) * 4.5313)), 14px);
   color: var(--grey3);
 }
@@ -57,26 +54,23 @@
 }
 
 @media (max-width: 1280px) {
-  .root {
-  }
+  .root {}
+
   .services {
     letter-spacing: 1px;
     font-size: clamp(30px, calc(4.625rem + ((1vw - 12.8px) * 4.7826)), 74px);
-    line-height: clamp(
-      30px,
-      calc(7.1875rem + ((1vw - 12.8px) * 9.2391)),
-      115px
-    );
-    margin-right: clamp(
-      20px,
-      calc(6.1875rem + ((1vw - 12.8px) * 30.8594)),
-      99px
-    );
+    line-height: clamp(30px,
+        calc(7.1875rem + ((1vw - 12.8px) * 9.2391)),
+        115px);
+    margin-right: clamp(20px,
+        calc(6.1875rem + ((1vw - 12.8px) * 30.8594)),
+        99px);
   }
 
   .kinds::after {
     // bottom: -5px;
   }
+
   .tip {
     letter-spacing: -0.5px;
   }

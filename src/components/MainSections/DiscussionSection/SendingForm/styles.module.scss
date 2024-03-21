@@ -1,10 +1,13 @@
 .formContainer {
   display: flex;
   flex-direction: row;
-  padding: 88px clamp(62px, calc(5.125rem + ((1vw - 19.2px) * 3.125)), 82px)
-    103px clamp(46px, calc(5.125rem + ((1vw - 19.2px) * 5.625)), 82px);
+  padding: 88px clamp(62px, calc(5.125rem + ((1vw - 19.2px) * 3.125)), 82px) 103px clamp(46px, calc(5.125rem + ((1vw - 19.2px) * 5.625)), 82px);
 
   background: var(--light);
+
+  label {
+    margin-bottom: 5px;
+  }
 }
 
 .formField {
@@ -20,18 +23,17 @@
   font-size: 16px;
   font-weight: 500;
   line-height: normal;
+  color: var(--grey3);
 }
 
 .formField input {
   margin-top: 4px;
   max-height: 60px;
   height: 100%;
+  padding: 30px 0 24px;
   border-bottom: 1px solid var(--grey3);
+  color: var(--grey3);
   outline: none;
-}
-
-label {
-  margin-bottom: 5px;
 }
 
 .submitButton {
@@ -39,6 +41,7 @@ label {
   font-size: 11.438px;
   font-weight: 400;
   line-height: normal;
+  width: fit-content;
   height: fit-content;
   background-color: var(--light);
   color: var(--grey3);
@@ -46,6 +49,13 @@ label {
   padding: 10px clamp(15px, calc(0.9375rem + ((1vw - 19.2px) * -0.625)), 19px);
   margin: auto 0 0 18px;
   text-transform: uppercase;
+  transition: .3s;
+}
+
+.submitButton:hover {
+  background-color: var(--brown);
+  border-color: var(--brown);
+  color: var(--light);
 }
 
 .error {
@@ -62,10 +72,16 @@ label {
   .formContainer {
     flex-direction: column;
   }
+
   .formField {
     max-width: 100%;
     margin: 15px 20px 0 15px;
   }
+
+  .formField input {
+    padding: 25px 0 20px;
+  }
+
   .submitButton {
     margin-top: 60px;
     padding: 15px;
