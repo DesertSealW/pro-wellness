@@ -48,13 +48,12 @@
   }
 
   .title {
-    // font-size: 60px;
-    // line-height: 60px;
-    // margin-bottom: 41px;
+    font-size: clamp(30px, calc(4.5rem + ((1vw - 12.8px) * 4.5652)), 72px);
+    line-height: 1;
   }
   .tell {
-    // display: none;
-    font-weight: normal;
+    font-size: clamp(10px, calc(1rem + ((1vw - 12.8px) * 0.6522)), 16px);
+    line-height: clamp(16px, calc(1.5625rem + ((1vw - 12.8px) * 0.9783)), 25px);
   }
 
   .wrapper {

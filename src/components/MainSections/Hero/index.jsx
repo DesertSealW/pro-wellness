@@ -4,7 +4,10 @@ const Hero = () => {
   return (
     <section className={styles.root}>
       <h1 className={styles.title}>
-        <span className={styles.strFirst}>Велнес Фитнес</span>
+        <span className={styles.strFirst}>
+          <span className={styles.strFirstOne}>Велнес</span>{" "}
+          <span className={styles.strFirstTwo}>Фитнес</span>
+        </span>
         <span className={styles.strSecond}>проекты</span>
       </h1>
 

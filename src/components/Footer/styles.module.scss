@@ -111,19 +111,33 @@
   }
 
   .entitlement {
-    // font-size: 10px;
-    // line-height: 10px;
-    font-weight: 300;
+    font-size: clamp(9px, calc(0.75rem + ((1vw - 12.8px) * 0.3261)), 12px);
+    line-height: 1;
+    font-weight: 400;
     letter-spacing: 1.3px;
     margin-bottom: 3px;
   }
   .second {
-    // padding-left: 280px;
+    padding-left: clamp(
+      127px,
+      calc(31.25rem + ((1vw - 12.8px) * 145.7031)),
+      500px
+    );
   }
+  .menus {
+    display: flex;
+    flex-direction: row;
+  }
+
   .portfolio,
   .contacts {
+    font-size: clamp(12px, calc(0.875rem + ((1vw - 12.8px) * 0.2174)), 14px);
     margin-top: 2px;
     margin-bottom: 11px;
+  }
+  .item {
+    font-size: clamp(10px, calc(0.75rem + ((1vw - 12.8px) * 0.2174)), 12px);
+    line-height: 18px;
   }
   .third {
     // padding-left: 112px;
@@ -132,5 +146,49 @@
   .fourth {
     margin-right: 11px;
     letter-spacing: -1px;
+  }
+
+  .goTop {
+    font-size: clamp(10px, calc(0.75rem + ((1vw - 12.8px) * 0.2174)), 12px);
+    line-height: clamp(
+      13px,
+      calc(1.1625rem + ((1vw - 12.8px) * 0.6087)),
+      18.6px
+    );
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
+  }
+  .first,
+  .menus,
+  .fourth {
+    margin: 0 auto;
+    padding: 0;
+  }
+  .first {
+    margin-bottom: 30px;
+  }
+  .first * {
+    display: flex;
+    margin: 0 auto;
+  }
+  .first img {
+    max-width: clamp(
+      200px,
+      calc(17.1875rem + ((1vw - 12.8px) * 8.1522)),
+      275px
+    );
+    width: 100%;
+    margin-bottom: 30px;
+  }
+  .second {
+    padding-left: 0;
+    margin-bottom: 30px;
+  }
+  .goTop {
+    margin: 0;
   }
 }

@@ -10,8 +10,8 @@
 .formField {
   display: flex;
   flex-direction: column;
-  width: 440px;
-  width: 440px;
+  max-width: 440px;
+  width: 100%;
   margin: 15px 20px 0 15px;
 }
 
@@ -24,8 +24,10 @@
 
 .formField input {
   margin-top: 4px;
-  height: 60px;
+  max-height: 60px;
+  height: 100%;
   border-bottom: 1px solid var(--grey3);
+  outline: none;
 }
 
 label {
@@ -48,4 +50,24 @@ label {
 
 .error {
   border: 1px solid red;
+}
+
+@media (max-width: 1280px) {
+  .formField p {
+    font-size: clamp(14px, calc(1rem + ((1vw - 12.8px) * 0.2174)), 16px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .formContainer {
+    flex-direction: column;
+  }
+  .formField {
+    max-width: 100%;
+    margin: 15px 20px 0 15px;
+  }
+  .submitButton {
+    margin-top: 60px;
+    padding: 15px;
+  }
 }

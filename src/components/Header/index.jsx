@@ -3,7 +3,8 @@ import { Link, useLocation } from "react-router-dom";
 import SocialBlock from "./SocialBlock";
 import NavBlock from "./NavBlock";
 import Logotip from "./Logotip";
-import burger from "assets/img/burger_White.svg";
+// import burger from "assets/img/burger_White.svg";
+import burger from "assets/img/burger3.svg";
 import icon from "assets/social-icons/telegram_black.svg";
 // import ButtonLangChange from "./ButtonLangChange";
 import { routeMain as routeMainPage } from "pages/MainPage";
@@ -22,38 +23,43 @@ const Header = () => {
       {/* <div className={styles.container}> */}
       <div className="container">
         <div className={styles.wrapper}>
-          <NavBlock pathname={location.pathname} />
+          <div className={styles.navBlock}>
+            <NavBlock pathname={location.pathname} />
+          </div>
           <div className={styles.logo}>
             <Link to={routeMainPage()}>
               <Logotip className={styles.Logotip} />
             </Link>
           </div>
           <div className={styles.right}>
-            <SocialBlock pathname={location.pathname} />
-            {/* <ButtonLangChange pathname={location.pathname} /> */}
+            <div className={styles.socialBlock}>
+              <SocialBlock pathname={location.pathname} />
+              {/* <ButtonLangChange pathname={location.pathname} /> */}
+            </div>
+
+            <button
+              type="button"
+              className={styles.burger}
+              onClick={(e) => {
+                e.stopPropagation();
+                setModalMenu(true);
+              }}
+            >
+              <img src={burger} alt="Кнопка бургера" />
+            </button>
           </div>
-          {/* <div className={styles.burger}> */}
-          <button
-            type="button"
-            className={styles.burger}
-            onClick={(e) => {
-              e.stopPropagation();
-              setModalMenu(true);
-            }}
-          >
-            <img src={burger} alt="Кнопка бургера" />
-          </button>
-          {/* </div> */}
         </div>
       </div>
       {modalMenu && (
         <ModalWindow onClose={() => setModalMenu(false)}>
           <div>
-            <h1>Дорогой друг!</h1>
+            <h1>МОДАЛЬНОЕ ОКНО</h1>
             <br />
-            <p>Тут скоро будет модальное меню</p>
+            <p>НАХОДИТСЯ В ПРОЦЕССЕ РАЗРАБОТКИ</p>
             <br />
-            <p>А пока выпей кваску</p>
+            <br />
+            <p>СКОРО ТУТ БУДЕТ МЕНЮ</p>
+            <br />
           </div>
         </ModalWindow>
       )}

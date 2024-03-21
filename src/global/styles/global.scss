@@ -36,12 +36,13 @@ h6 {
 @media (max-width: 1280px) {
   .container {
     // width: 1180px; //92,1875vw
-    width: 1150px;
+    // width: 1150px;
+
+    // width: 280px; //92,1875vw
+    width: clamp(324px, calc(71.875rem + ((1vw - 12.8px) * 89.7826)), 1150px);
+    margin: 0 auto;
   }
 }
 
-@media (max-width: 320px) {
-  .container {
-    width: 280px; //92,1875vw
-  }
+@media (max-width: 360px) {
 }

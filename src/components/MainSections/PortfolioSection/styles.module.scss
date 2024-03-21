@@ -54,6 +54,10 @@
   padding-bottom: 6px;
 }
 
+.down {
+  display: none;
+}
+
 .get::after {
   content: "";
   position: absolute;
@@ -163,20 +167,28 @@
   .root {
     // padding: 100px 0 102px 0;
   }
-  .works {
-    font-weight: 300; //было 400
-  }
 
   .title {
     // letter-spacing: -1px;
-    // font-size: 48px;
-    // line-height: 1; //48px
+    font-size: clamp(30px, calc(4rem + ((1vw - 12.8px) * 3.6957)), 64px);
+    line-height: clamp(30px, calc(4rem + ((1vw - 12.8px) * 3.6957)), 64px);
   }
 
   .performance {
     font-weight: 300; //было 400
     // margin-bottom: 71px;
     // line-height: 15.6px; //1.3
+  }
+
+  .works,
+  .get {
+    font-weight: 300; //было 400
+    font-size: clamp(9px, calc(0.75rem + ((1vw - 12.8px) * 0.3261)), 12px);
+    line-height: clamp(
+      11.7px,
+      calc(0.975rem + ((1vw - 19.2px) * 0.6094)),
+      15.6px
+    );
   }
   .performance::after {
     // bottom: -31px;
@@ -214,13 +226,13 @@
 
   .coment1 {
     font-weight: 300;
-    // line-height: 16px; //1;
+    font-size: clamp(11px, calc(1rem + ((1vw - 12.8px) * 0.5435)), 16px);
+    line-height: normal;
   }
 
   .coment2 {
     font-weight: 300;
-    // line-height: 1; //14px
-    // margin-top: 8px;
+    font-size: clamp(9.5px, calc(0.875rem + ((1vw - 12.8px) * 0.4891)), 14px);
   }
 
   .trio img {
@@ -228,7 +240,7 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 1024px) {
   .performance {
     display: flex;
     flex-direction: column;
@@ -245,9 +257,27 @@
   .trio {
     display: flex;
     flex-direction: column;
+    margin-bottom: 45px;
+  }
+
+  .trio::after {
+    bottom: -203px;
   }
   .two {
     display: flex;
     flex-direction: column;
+  }
+
+  .down {
+    display: flex;
+  }
+
+  .trio img {
+    object-fit: cover;
+    max-width: none;
+  }
+
+  .coment2 {
+    display: none;
   }
 }

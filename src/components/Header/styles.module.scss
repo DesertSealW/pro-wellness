@@ -12,7 +12,8 @@
   position: relative;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 63px;
+  gap: clamp(9px, calc(3.9375rem + ((1vw - 19.2px) * 8.4375)), 63px);
+  align-items: center;
 }
 .wrapper:before {
   content: "";
@@ -27,8 +28,9 @@
 
 .right {
   display: flex;
-  justify-self: end;
+  // justify-self: end;
   gap: 86px;
+  margin-left: auto;
 }
 
 .logo {
@@ -38,6 +40,7 @@
 
 .burger {
   display: none;
+  margin-left: auto;
 }
 
 @media (max-width: 1280px) {
@@ -46,10 +49,20 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 800px) {
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+  }
   .burger {
     display: block;
     width: 30px;
     height: 30px;
+  }
+  .navBlock {
+    display: none;
+  }
+  .socialBlock {
+    display: none;
   }
 }

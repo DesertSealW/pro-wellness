@@ -98,26 +98,3 @@ const SendingForm = () => {
 };
 
 export default SendingForm;
-
-// const SendingForm = () => {
-//   return (
-//     <form className={styles.formContainer}>
-//       <label className={styles.formField}>
-//         <p>Телефон:</p>
-//         <input type="tel" />
-//       </label>
-//       <label className={styles.formField}>
-//         <p>Имя:</p>
-//         <input type="text" />
-//       </label>
-//       <label className={styles.formField}>
-//         <p>Ваша идея:</p>
-//         <input type="text" />
-//       </label>
-//       <button type="submit" className={styles.submitButton}>
-//         Отправить
-//       </button>
-//     </form>
-//   );
-// };
-// export default SendingForm;

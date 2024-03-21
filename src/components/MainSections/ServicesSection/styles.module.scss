@@ -61,6 +61,17 @@
   }
   .services {
     letter-spacing: 1px;
+    font-size: clamp(30px, calc(4.625rem + ((1vw - 12.8px) * 4.7826)), 74px);
+    line-height: clamp(
+      30px,
+      calc(7.1875rem + ((1vw - 12.8px) * 9.2391)),
+      115px
+    );
+    margin-right: clamp(
+      20px,
+      calc(6.1875rem + ((1vw - 12.8px) * 30.8594)),
+      99px
+    );
   }
 
   .kinds::after {
@@ -74,5 +85,11 @@
     padding: px 0px 0px 12px;
     display: flex;
     align-items: center;
+  }
+}
+
+@media (max-width: 1024px) {
+  .wrapper {
+    flex-direction: column;
   }
 }

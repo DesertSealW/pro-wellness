@@ -75,6 +75,12 @@ const PortfolioSection = () => {
             </div>
           </div>
         </div>
+
+        <div className={styles.down}>
+          <Link to={routeDevelopmentPage()}>
+            <div className={styles.get}>ВСЕ РАБОТЫ</div>
+          </Link>
+        </div>
       </div>
     </section>
   );

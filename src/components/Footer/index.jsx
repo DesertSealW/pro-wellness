@@ -43,43 +43,45 @@ const Footer = () => {
             <p className={styles.entitlement}>Все права защищены © 2023</p>
             <p>Сделано в Deviart</p>
           </div>
-          <div className={styles.second}>
-            <nav>
+          <div className={styles.menus}>
+            <div className={styles.second}>
+              <nav>
+                <Link to={routeDevelopmentPage()}>
+                  <div className={styles.portfolio}>ПОРТФОЛИО</div>
+                </Link>
+                <ul className={styles.list}>
+                  <li>
+                    <Link to={routeDevelopmentPage()}>
+                      <div className={styles.item}>КОНЦЕПЦИЯ</div>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link to={routeDevelopmentPage()}>
+                      <div className={styles.item}>АРХИТЕКТУРА</div>
+                    </Link>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div className={styles.third}>
               <Link to={routeDevelopmentPage()}>
-                <div className={styles.portfolio}>ПОРТФОЛИО</div>
+                <div className={styles.contacts}>КОНТАКТЫ</div>
               </Link>
               <ul className={styles.list}>
                 <li>
-                  <Link to={routeDevelopmentPage()}>
-                    <div className={styles.item}>КОНЦЕПЦИЯ</div>
-                  </Link>
+                  <a className={styles.item} href="tel:+78124084151">
+                    +7 (812) 408-4151
+                  </a>
                 </li>
                 <li>
-                  <Link to={routeDevelopmentPage()}>
-                    <div className={styles.item}>АРХИТЕКТУРА</div>
-                  </Link>
+                  <a className={styles.item} href="mailto:info@taiga-arch.com">
+                    info@taiga-arch.com
+                  </a>
                 </li>
               </ul>
-            </nav>
+            </div>
           </div>
-          <div className={styles.third}>
-            <Link to={routeDevelopmentPage()}>
-              <div className={styles.contacts}>КОНТАКТЫ</div>
-            </Link>
-            <ul className={styles.list}>
-              <li>
-                <a className={styles.item} href="tel:+78124084151">
-                  +7 (812) 408-4151
-                </a>
-              </li>
-              <li>
-                <a className={styles.item} href="mailto:info@taiga-arch.com">
-                  info@taiga-arch.com
-                </a>
-              </li>
-            </ul>
-          </div>
-          {/* <div className={styles.fourth}>НАВЕРХ</div> */}
+
           <div className={styles.fourth}>
             <button className={styles.goTop} onClick={scrollToTop}>
               НАВЕРХ

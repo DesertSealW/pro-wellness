@@ -40,6 +40,18 @@
   font-weight: 400;
   line-height: 1.5625;
   padding: 11px 10px 0px 36px;
+  width: 100%;
+}
+
+.show1 {
+  display: flex;
+}
+.show2 {
+  display: none;
+}
+
+.line button {
+  margin-left: auto;
 }
 
 .request {
@@ -67,7 +79,6 @@
   position: absolute;
   bottom: 1px;
   // left: clamp(-12px, calc(-0.75rem + ((1vw - 19.2px) * -1.875)), 0px);
-
   display: block;
   // width: 127%;
   width: 115%; // Значение мое, так как оригинал - нелепый
@@ -85,23 +96,28 @@
 
 @media (max-width: 1280px) {
   .tip {
-    // font-size: 32px;
-    // line-height: 32px; //1;
+    font-size: clamp(24px, calc(2.5rem + ((1vw - 12.8px) * 1.7391)), 40px);
+    line-height: clamp(24px, calc(3.875rem + ((1vw - 12.8px) * 4.1304)), 62px);
   }
+
   .description {
-    // font-size: 14px;
-    font-weight: 300;
-    // line-height: 16.8px; //1.5625;
+    font-size: clamp(14px, calc(1rem + ((1vw - 12.8px) * 0.2174)), 16px);
+    line-height: clamp(
+      16.8px,
+      calc(1.5625rem + ((1vw - 12.8px) * 0.8913)),
+      25px
+    );
     padding: 0px 0px 0px 13px;
     display: flex;
     align-items: center;
   }
 
   .request {
-    font-weight: 300;
-    //  line-height: 15.6px;
-    // margin: 0px 10px 0px auto; //размеры мои
-    // padding: 7px 0 10px 0;
+    line-height: clamp(
+      15.6px,
+      calc(1.1625rem + ((1vw - 12.8px) * 0.3261)),
+      18.6px
+    );
   }
 
   .request::after {
@@ -116,5 +132,52 @@
 
   .kinds::after {
     // bottom: -3px;
+  }
+
+  .show1 {
+    display: flex;
+  }
+  .show2 {
+    display: none;
+  }
+}
+
+@media (max-width: 1024px) {
+  .container {
+    margin-bottom: 30px;
+  }
+
+  .line {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+
+    margin-bottom: 14px;
+  }
+
+  .tip {
+  }
+
+  .description {
+    max-width: 250px;
+    padding: 0;
+    line-height: 18.8px;
+    color: var(--grey3);
+    margin-left: 0;
+  }
+  .show1 {
+    display: none;
+  }
+  .show2 {
+    display: flex;
+  }
+}
+
+@media (max-width: 800px) {
+  .description {
+    font-weight: 300;
+  }
+  .request {
+    font-weight: 300;
   }
 }
