@@ -15,14 +15,14 @@ const PortfolioSection = () => {
       <div className="container">
         <div className={styles.performance}>
           <div className={styles.left}>
-            <div className={styles.works}>НАШИ ВЫПОЛНЕННЫЕ РАБОТЫ</div>
+            <p className={styles.works}>НАШИ ВЫПОЛНЕННЫЕ РАБОТЫ</p>
             <Link to={routeDevelopmentPage()}>
               <h2 className={styles.title}>ПОРТФОЛИО</h2>
             </Link>
           </div>
           <div className={styles.right}>
             <Link to={routeDevelopmentPage()}>
-              <div className={styles.get}>ВСЕ РАБОТЫ</div>
+              <p className={styles.get}>ВСЕ РАБОТЫ</p>
             </Link>
           </div>
         </div>
@@ -37,10 +37,8 @@ const PortfolioSection = () => {
                 alt="Банный комплекс 'Карелия"
               />
             </picture>
-            <div className={styles.coment1}>Банный комплекс "Карелия"</div>
-            <div className={styles.coment2}>
-              Здания, фасады, благоустройство
-            </div>
+            <p className={styles.coment1}>Банный комплекс "Карелия"</p>
+            <p className={styles.coment2}>Здания, фасады, благоустройство</p>
           </div>
           <div className={styles.two}>
             <div>
@@ -53,10 +51,8 @@ const PortfolioSection = () => {
                   alt="Санаторий Таежный"
                 />
               </picture>
-              <div className={styles.coment1}>Санаторий Таежный</div>
-              <div className={styles.coment2}>
-                Здания, фасады, благоустройство
-              </div>
+              <p className={styles.coment1}>Санаторий Таежный</p>
+              <p className={styles.coment2}>Здания, фасады, благоустройство</p>
             </div>
             <div>
               <picture>
@@ -68,17 +64,15 @@ const PortfolioSection = () => {
                   alt="Институт им. Хлопина"
                 />
               </picture>
-              <div className={styles.coment1}>Институт им. Хлопина</div>
-              <div className={styles.coment2}>
-                Здания, фасады, благоустройство
-              </div>
+              <p className={styles.coment1}>Институт им. Хлопина</p>
+              <p className={styles.coment2}>Здания, фасады, благоустройство</p>
             </div>
           </div>
         </div>
 
         <div className={styles.down}>
           <Link to={routeDevelopmentPage()}>
-            <div className={styles.get}>ВСЕ РАБОТЫ</div>
+            <p className={styles.get}>ВСЕ РАБОТЫ</p>
           </Link>
         </div>
       </div>

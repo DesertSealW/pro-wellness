@@ -4,20 +4,16 @@ const Hero = () => {
   return (
     <section className={styles.root}>
       <h1 className={styles.title}>
-        <span className={styles.strFirst}>
-          <span className={styles.strFirstOne}>Велнес</span>{" "}
-          <span className={styles.strFirstTwo}>Фитнес</span>
-        </span>
-        <span className={styles.strSecond}>проекты</span>
+        <em>Велнес</em>
+        Фитнес проекты
       </h1>
-
-      <div className={styles.creating}>
+      <p className={styles.creating}>
         Комплексное проектирование объектов для отдыха, здоровья, восстановления
         и активного долголетия
-      </div>
-      <button className={styles.callButton} type="button">
+      </p>
+      {/* <button className={styles.callButton} type="button">
         СВЯЖИТЕСЬ С НАМИ
-      </button>
+      </button> */}
     </section>
   );
 };

@@ -8,7 +8,7 @@
 // import telegram_white from "assets/social-icons/telegram_white.svg";
 
 import telegram_black from "assets/social-icons/telegram_black.svg";
-import viber_black from "assets/social-icons/viber_black.svg";
+import viber_black from "assets/social-icons/pinterest_black.svg";
 import phone_black from "assets/social-icons/phone_black.svg";
 
 import styles from "./styles.module.scss";

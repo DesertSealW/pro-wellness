@@ -1,5 +1,5 @@
 import routeMain from "./routes";
-import "./styles.scss";
+import "./styles.module.scss";
 
 const AboutPage = () => {
   return (

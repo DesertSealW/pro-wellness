@@ -1,10 +1,15 @@
-@import "global/styles/global";
+// @import "global/styles/global";
 
 .root {
   // background: var(--dark);
   background: var(--lite);
-  padding: clamp(138px, calc(8.625rem + ((1vw - 19.2px) * -22.8125)), 284px) 0
-    77px 0;
+
+  //padding ниже был раочим. Видимо что-то в другом месте повлияло. Переделал
+  // padding-top: clamp(80px, calc(7.5rem + ((1vw - 12.8px) * 4.3478)), 120px);
+  padding-top: clamp(140px, calc(8.75rem + ((1vw - 19.2px) * -22.1875)), 282px);
+  padding-right: 0;
+  padding-bottom: 77px;
+  padding-left: 0;
 }
 
 .wrapper {
@@ -29,6 +34,7 @@
   display: flex;
   flex-direction: column;
   position: relative;
+  width: 100%;
 }
 
 .kinds::after {
@@ -59,6 +65,7 @@
 @media (max-width: 1280px) {
   .root {
   }
+
   .services {
     letter-spacing: 1px;
     font-size: clamp(30px, calc(4.625rem + ((1vw - 12.8px) * 4.7826)), 74px);
@@ -77,6 +84,7 @@
   .kinds::after {
     // bottom: -5px;
   }
+
   .tip {
     letter-spacing: -0.5px;
   }
@@ -89,6 +97,16 @@
 }
 
 @media (max-width: 1024px) {
+  .root {
+    padding-top: 35px;
+  }
+  .services {
+    letter-spacing: 0px;
+    margin-bottom: 27px;
+  }
+  .line {
+    margin-bottom: 3px;
+  }
   .wrapper {
     flex-direction: column;
   }

@@ -5,7 +5,7 @@ import AboutSection from "components/MainSections/AboutSection";
 import ServicesSection from "components/MainSections/ServicesSection";
 import DiscussionSection from "components/MainSections/DiscussionSection";
 
-import "./styles.scss";
+import "./styles.module.scss";
 
 const MainPage = () => {
   return (
@@ -14,7 +14,7 @@ const MainPage = () => {
       <PortfolioSection />
       <AboutSection />
       <ServicesSection />
-      <DiscussionSection />
+      {/* <DiscussionSection /> */}
     </>
   );
 };

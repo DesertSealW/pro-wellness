@@ -3,7 +3,7 @@ import styles from "./styles.module.scss";
 
 const ServicesSection = () => {
   return (
-    <div className={styles.root}>
+    <section className={styles.root}>
       {/* <div className={styles.container}> */}
       <div className="container">
         <div className={styles.wrapper}>
@@ -19,7 +19,7 @@ const ServicesSection = () => {
           </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 };
 

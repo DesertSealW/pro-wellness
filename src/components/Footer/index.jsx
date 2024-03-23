@@ -47,17 +47,17 @@ const Footer = () => {
             <div className={styles.second}>
               <nav>
                 <Link to={routeDevelopmentPage()}>
-                  <div className={styles.portfolio}>ПОРТФОЛИО</div>
+                  <p className={styles.portfolio}>ПОРТФОЛИО</p>
                 </Link>
                 <ul className={styles.list}>
                   <li>
                     <Link to={routeDevelopmentPage()}>
-                      <div className={styles.item}>КОНЦЕПЦИЯ</div>
+                      <p className={styles.item}>КОНЦЕПЦИЯ</p>
                     </Link>
                   </li>
                   <li>
                     <Link to={routeDevelopmentPage()}>
-                      <div className={styles.item}>АРХИТЕКТУРА</div>
+                      <p className={styles.item}>АРХИТЕКТУРА</p>
                     </Link>
                   </li>
                 </ul>
@@ -65,7 +65,7 @@ const Footer = () => {
             </div>
             <div className={styles.third}>
               <Link to={routeDevelopmentPage()}>
-                <div className={styles.contacts}>КОНТАКТЫ</div>
+                <p className={styles.contacts}>КОНТАКТЫ</p>
               </Link>
               <ul className={styles.list}>
                 <li>

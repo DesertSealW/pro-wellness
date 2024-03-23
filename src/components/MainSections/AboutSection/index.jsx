@@ -1,23 +1,30 @@
-import { Link } from "react-router-dom";
-
-import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import about1920 from "assets/img/mainAboutSection/1920about.png";
-// import about1280 from "assets/img/mainAboutSection/1280about.png";
+// import about1920 from "assets/img/mainAboutSection/1920about.png";
+import about1280 from "assets/img/mainAboutSection/1280about.png";
 import styles from "./styles.module.scss";
 import { useEffect, useRef, useState } from "react";
-// import { useEffect, useRef } from "react";
+import Description from "./Description";
 
 const AboutSection = () => {
   const blockRef = useRef(null);
+  const containerRef = useRef(null);
   const [distance, setDistance] = useState("70vw");
+  const [interval, setIntervalRight] = useState("70vw");
+
   useEffect(() => {
     const handleResize = () => {
       if (blockRef.current) {
         const { left } = blockRef.current.getBoundingClientRect();
-        console.log(left);
+        // console.log(left);
         setDistance(`${left}px`);
       }
+
+      if (containerRef.current) {
+        const { right } = containerRef.current.getBoundingClientRect();
+        // console.log(right);
+        setIntervalRight(`${right}px`);
+      }
     };
+
     handleResize(); // Вызываем функцию при монтировании компонента
     window.addEventListener("resize", handleResize);
     return () => {
@@ -25,18 +32,26 @@ const AboutSection = () => {
     };
   }, []);
 
+  // <span className={styles.free}>НЕМНОГО</span>
+  // <span className={styles.overlap}>О НАС</span>
   return (
     <section className={styles.root}>
-      <div className="container">
+      <div ref={containerRef} className="container">
         <div className={styles.performance}>
-          <div className={styles.philosophy}>НАША ФИЛОСОФИЯ</div>
+          <p className={styles.philosophy}>НАША ФИЛОСОФИЯ</p>
           <h2 className={styles.title}>
-            <span className={styles.free}>НЕМНОГО</span>
-            <span className={styles.overlap}>О НАС</span>
+            НЕМНОГО <em>{"  "}О НАС</em>
           </h2>
         </div>
       </div>
+      <img
+        style={{ "--interval-container": interval }}
+        src={about1280}
+        className={styles.aboutFrame}
+        alt="Спортивный зал. Стелаж с гантелями"
+      />
 
+      {/* Исчезает при < 1024 */}
       <div className={styles.content}>
         <div
           style={{ "--pseudo-element-width": distance }}
@@ -44,28 +59,15 @@ const AboutSection = () => {
         >
           <div className="container">
             <div ref={blockRef} className={styles.right}>
-              <div className={styles.description}>
-                <p>Мы — №1 в проектировании велнес и фитнес объектов.</p>
-                <p>
-                  Качество нашей работы сформировано многолетним опытом, и мы
-                  точно знаем:
-                </p>
-                <ul className={styles.list}>
-                  <li className={styles.item}>
-                    Что такое рабочий велнес или фитнес проект
-                  </li>
-                  <li className={styles.item}>Как оптимизировать затраты</li>
-                  <li className={styles.item}>
-                    Какая концепция действительно работает
-                  </li>
-                </ul>
-              </div>
-              <Link className={styles.more} to={routeDevelopmentPage()}>
-                УЗНАТЬ БОЛЬШЕ
-              </Link>
+              <Description />
             </div>
           </div>
         </div>
+      </div>
+
+      <div className={styles.down}>
+        <Description />
+        {/* <Jamp /> */}
       </div>
     </section>
   );

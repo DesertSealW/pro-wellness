@@ -3,4 +3,13 @@
 }
 
 @media (max-width: 1280px) {
+  .logo {
+    width: clamp(250px, calc(18.3125rem + ((1vw - 12.8px) * 8.9583)), 293px);
+  }
+}
+
+@media (max-width: 850px) {
+  .logo {
+    width: clamp(180px, calc(18.3125rem + ((1vw - 12.8px) * 12.2826)), 293px);
+  }
 }

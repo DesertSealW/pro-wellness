@@ -1,5 +1,3 @@
-// @import "global/styles/global.scss";
-
 .root {
   background-color: var(--dark);
   color: var(--light);
@@ -49,16 +47,29 @@
   }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 850px) {
+  .root {
+    padding-top: clamp(30px, calc(3.1875rem + ((1vw - 12.8px) * 2.2826)), 51px);
+  }
+
   .wrapper {
     display: flex;
     flex-direction: row;
   }
+
+  .wrapper:before {
+    display: none;
+  }
   .burger {
     display: block;
-    width: 30px;
-    height: 30px;
+    width: 36px;
+    height: 36px;
   }
+
+  .burger img {
+    stroke: none;
+  }
+
   .navBlock {
     display: none;
   }
