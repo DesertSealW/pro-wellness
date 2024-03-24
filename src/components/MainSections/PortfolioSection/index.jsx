@@ -29,8 +29,8 @@ const PortfolioSection = () => {
         <div className={styles.trio}>
           <div>
             <picture>
-              <source srcset={link1_1920} media="(max-width: 1280px)" />
-              <source srcset={link1_1280} media="(max-width: 800px)" />
+              <source srcSet={link1_1920} media="(max-width: 1280px)" />
+              <source srcSet={link1_1280} media="(max-width: 800px)" />
               <img
                 src={link1_1920}
                 className={styles.bigImg}
@@ -43,8 +43,8 @@ const PortfolioSection = () => {
           <div className={styles.two}>
             <div>
               <picture>
-                <source srcset={link2_1920} media="(max-width: 1280px)" />
-                <source srcset={link2_1280} media="(max-width: 800px)" />
+                <source srcSet={link2_1920} media="(max-width: 1280px)" />
+                <source srcSet={link2_1280} media="(max-width: 800px)" />
                 <img
                   src={link2_1920}
                   className={styles.smolImg}
@@ -56,8 +56,8 @@ const PortfolioSection = () => {
             </div>
             <div>
               <picture>
-                <source srcset={link3_1920} media="(max-width: 1280px)" />
-                <source srcset={link3_1280} media="(max-width: 800px)" />
+                <source srcSet={link3_1920} media="(max-width: 1280px)" />
+                <source srcSet={link3_1280} media="(max-width: 800px)" />
                 <img
                   src={link3_1920}
                   className={styles.smolImg}

@@ -1,5 +1,5 @@
 .root {
-  background-color: var(--light);
+  // background-color: var(--light);
   // padding: 126px 0 166px 0;
   padding: clamp(126px, calc(7.875rem + ((1vw - 19.2px) * -2.6562)), 143px) 0
     clamp(145px, calc(10.375rem + ((1vw - 19.2px) * 3.2813)), 166px) 0;
@@ -13,7 +13,7 @@
   gap: 30px;
   // margin-bottom: 81px;
   margin-bottom: clamp(76px, calc(4.75rem + ((1vw - 19.2px) * -3.4375)), 98px);
-  color: var(--grey2);
+  color: var(--grey3);
   font-size: 12px;
   font-weight: 400;
   line-height: clamp(
@@ -31,7 +31,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--grey2);
+  background-color: var(--grey3);
   bottom: clamp(-38px, calc(-1.125rem + ((1vw - 19.2px) * 3.125)), -18px);
 }
 
@@ -43,7 +43,7 @@
 
 .works,
 .get {
-  color: var(--grey2);
+  color: var(--grey3);
   margin: auto 0;
 }
 
@@ -69,7 +69,7 @@
   width: 120px;
   width: calc(7.5rem + ((1vw - 19.2px) * 2.6563));
   height: 1px;
-  background-color: var(--grey2);
+  background-color: var(--grey3);
   bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
@@ -85,18 +85,13 @@
 }
 
 .title {
-  color: var(--grey2);
   letter-spacing: -1px;
-  color: var(--grey2);
+  color: var(--grey3);
   font-family: "Cormorant Infant";
   font-size: 64px;
   // line-height: 1.54688;
   line-height: clamp(64px, calc(6.1875rem + ((1vw - 19.2px) * 5.4688)), 99px);
   text-transform: uppercase;
-  em {
-    color: var(--brown);
-    font-style: normal;
-  }
 }
 
 .trio {
@@ -104,7 +99,7 @@
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: clamp(52px, calc(4.75rem + ((1vw - 19.2px) * 3.75)), 76px);
-  color: var(--grey2);
+  color: var(--grey3);
 }
 
 .trio::after {
@@ -113,7 +108,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--grey2);
+  background-color: var(--grey3);
 
   bottom: clamp(-146px, calc(-6.4375rem + ((1vw - 19.2px) * 6.7188)), -103px);
 }
@@ -149,23 +144,19 @@
 }
 
 .coment1 {
-  // color: var(--grey2);
   font-family: "Cormorant Infant";
   font-size: 16px;
   line-height: 1;
   font-weight: 400;
-  // line-height: 1.56;
+
   margin-top: 20px;
   text-transform: uppercase;
 }
 
 .coment2 {
-  // color: var(--grey2);
   font-size: 14px;
   line-height: 1;
   font-weight: 400;
-  // line-height: 1.57143;
-  // margin-top: -3px;
 }
 
 @media (max-width: 1280px) {

@@ -1,11 +1,19 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import logo from "assets/img/logo_white.svg";
+import logo_white from "assets/img/logo_white.svg";
+import logo_black from "assets/img/logo_Black.svg";
 import styles from "./styles.module.scss";
 
 const Footer = () => {
   const [isTop, setIsTop] = useState(true);
+  const body = document.body;
+
+  const lightColor = getComputedStyle(body).getPropertyValue("--light").trim(); // Получаем значение переменной --light
+  // const currentBackgroundColor =
+  //   getComputedStyle(body).getPropertyValue("--background-color");
+
+  const [currentBackgroundColor, setСurrentBackgroundColor] = useState("");
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -31,6 +39,27 @@ const Footer = () => {
     };
   }, []);
 
+  useEffect(() => {
+    const handleBackgroundColorChange = () => {
+      const newColor =
+        getComputedStyle(body).getPropertyValue("--background-color");
+      setСurrentBackgroundColor(newColor);
+    };
+
+    handleBackgroundColorChange();
+    document.body.addEventListener(
+      "transitionend",
+      handleBackgroundColorChange
+    );
+
+    return () => {
+      document.body.removeEventListener(
+        "transitionend",
+        handleBackgroundColorChange
+      );
+    };
+  }, []);
+
   return (
     <div className={styles.root}>
       {/* <div className={styles.container}> */}
@@ -38,7 +67,14 @@ const Footer = () => {
         <div className={styles.wrapper}>
           <div className={styles.first}>
             <div>
-              <img src={logo} alt="Логотип" />
+              <img
+                src={
+                  currentBackgroundColor === lightColor
+                    ? logo_black
+                    : logo_white
+                }
+                alt="Логотип"
+              />
             </div>
             <p className={styles.entitlement}>Все права защищены © 2023</p>
             <p>Сделано в Deviart</p>

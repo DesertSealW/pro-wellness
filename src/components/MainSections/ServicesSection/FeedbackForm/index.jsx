@@ -81,7 +81,7 @@ const Form = ({ onSubmit }) => {
       onSubmit();
     }
   };
-  console.log(errors);
+  // console.log(errors);
   return (
     <form onSubmit={handleFormSubmit} className={styles.form}>
       <h1>ОБСУДИМ ВАШ ПРОЕКТ?</h1>

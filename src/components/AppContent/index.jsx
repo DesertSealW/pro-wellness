@@ -15,10 +15,14 @@ import DevelopmentPage, {
 
 import Header from "components/Header";
 
-// import 2x
+import "./styles.module.scss";
 import Footer from "components/Footer";
+// import ContactsPage from "pages/ContactsPage";
 
 // import Footer from "components/Footer";
+
+// console.log("routeContactsPage", routeContactsPage);
+// debugger;
 
 const AppContent = () => {
   return (
@@ -29,7 +33,7 @@ const AppContent = () => {
           <Route path="/" element={<MainPage />} />
           <Route path={routeAboutPage()} element={<AboutPage />} />
           <Route path={routePortfolioPage()} element={<PortfolioPage />} />
-          <Route path={routeContactsPage()} element={<ContactsPage />} />
+          {/* <Route path={routeContactsPage()} element={<ContactsPage />} /> */}
           <Route path={routeDevelopmentPage()} element={<DevelopmentPage />} />
 
           <Route path="*" element={<NotFoundPage />} />

@@ -44,7 +44,7 @@ const SendingForm = () => {
       setErrors(newErrors);
     } else {
       // Если форма валидна, можно отправлять данные
-      console.log("Данные отправлены:", formData);
+      // console.log("Данные отправлены:", formData);
       setErrors({});
     }
   };

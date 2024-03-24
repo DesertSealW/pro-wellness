@@ -3,7 +3,8 @@ import routeMain from "./routes";
 import PortfolioSection from "components/MainSections/PortfolioSection";
 import AboutSection from "components/MainSections/AboutSection";
 import ServicesSection from "components/MainSections/ServicesSection";
-import DiscussionSection from "components/MainSections/DiscussionSection";
+import СhangingСolorTheme from "components/AppContent/СhangingСolorTheme";
+// import DiscussionSection from "components/MainSections/DiscussionSection";
 
 import "./styles.module.scss";
 
@@ -12,6 +13,7 @@ const MainPage = () => {
     <>
       <Hero />
       <PortfolioSection />
+      <СhangingСolorTheme />
       <AboutSection />
       <ServicesSection />
       {/* <DiscussionSection /> */}
