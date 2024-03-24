@@ -3,32 +3,35 @@ import { Link, useLocation } from "react-router-dom";
 import SocialBlock from "./SocialBlock";
 import NavBlock from "./NavBlock";
 import Logotip from "./Logotip";
-// import burger from "assets/img/burger_White.svg";
 import burger from "assets/img/burger3.svg";
-import icon from "assets/social-icons/telegram_black.svg";
-// import ButtonLangChange from "./ButtonLangChange";
 import { routeMain as routeMainPage } from "pages/MainPage";
-
-import styles from "./styles.module.scss";
 import ModalWindow from "components/AppContent/ModalWindow";
+import styles from "./styles.module.scss";
 
 const Header = () => {
   const location = useLocation();
   const [modalMenu, setModalMenu] = useState(false);
-
-  // console.log("Я тут", modalMenu);
+  // console.log(location.pathname);
   // debugger;
+
   return (
-    <header className={styles.root}>
+    <header
+      className={`${styles.root} ${
+        location.pathname === "/" ? styles.bgDark : styles.bgLate
+      }`}
+    >
       {/* <div className={styles.container}> */}
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.navBlock}>
-            <NavBlock pathname={location.pathname} />
+            <NavBlock />
           </div>
           <div className={styles.logo}>
             <Link to={routeMainPage()}>
-              <Logotip className={styles.Logotip} />
+              <Logotip
+                pathname={location.pathname}
+                className={styles.Logotip}
+              />
             </Link>
           </div>
           <div className={styles.right}>

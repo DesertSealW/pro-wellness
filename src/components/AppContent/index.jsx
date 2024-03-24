@@ -17,7 +17,6 @@ import Header from "components/Header";
 
 import "./styles.module.scss";
 import Footer from "components/Footer";
-// import ContactsPage from "pages/ContactsPage";
 
 // import Footer from "components/Footer";
 
@@ -33,7 +32,7 @@ const AppContent = () => {
           <Route path="/" element={<MainPage />} />
           <Route path={routeAboutPage()} element={<AboutPage />} />
           <Route path={routePortfolioPage()} element={<PortfolioPage />} />
-          {/* <Route path={routeContactsPage()} element={<ContactsPage />} /> */}
+          <Route path={routeContactsPage()} element={<ContactsPage />} />
           <Route path={routeDevelopmentPage()} element={<DevelopmentPage />} />
 
           <Route path="*" element={<NotFoundPage />} />

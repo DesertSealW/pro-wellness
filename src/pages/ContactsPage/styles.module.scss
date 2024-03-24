@@ -44,27 +44,31 @@
   color: var(--gold);
 }
 
-.box {
-  background: greenyellow;
-  height: 50px;
-}
+// .box {
+//   background: greenyellow;
+//   height: 50px;
+// }
 
-.box::before {
+.wrapper::after {
   content: "";
   background-image: url("../../assets/img/contactsPage/1920Contacts.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  max-height: 420px;
-  height: 100%;
+  max-height: 550px;
+  // height: 100%;
   // width: 70vw;
-  width: var(--distance-block);
+  height: 550px;
+  width: var(--distance-finish-container);
   position: absolute;
-  top: 0;
-  left: calc(0 - var(--distance-finish-container));
+  top: 354;
+
+  // left: calc(0 - var(--distance-block));
+  left: 0;
   z-index: -1;
 }
 
 .right {
+  background-color: aquamarine;
   display: grid;
   grid-template-rows: 5fr 1fr;
   gap: 10px;

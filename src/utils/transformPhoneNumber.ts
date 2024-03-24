@@ -1,5 +1,5 @@
 const transformPhoneNumber = (phoneNumber: string) => {
-  phoneNumber = phoneNumber.replace('+7', '').replace(/[^\d]/g, '');
+  phoneNumber = phoneNumber.replace("+7", "").replace(/[^\d]/g, "");
   const areaCode = phoneNumber.slice(0, 3);
   const firstPart = phoneNumber.slice(3, 6);
   const secondPart = phoneNumber.slice(6, 8);

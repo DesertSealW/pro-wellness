@@ -1,3 +1,3 @@
-const routeMain = () => '/portfolio';
+const routeMain = () => "/portfolio";
 
 export default routeMain;

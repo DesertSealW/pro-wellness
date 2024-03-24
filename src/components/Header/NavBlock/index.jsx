@@ -1,17 +1,28 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { routeMain as routeAboutPage } from "pages/AboutPage";
 import { routeMain as routeContactsPage } from "pages/ContactsPage";
 import { routeMain as routePortfolioPage } from "pages/PortfolioPage";
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 
 import styles from "./styles.module.scss";
+import { useEffect, useState } from "react";
 
-const NavBlock = ({ pathname }) => {
+const NavBlock = () => {
+  const [color, setColor] = useState("gold");
+  const pathname = useLocation().pathname;
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setColor("light");
+    } else {
+      setColor("dark");
+    }
+  }, [pathname]);
+
   return (
-    // <nav className={pathname === "/" ? "nav nav-white" : "nav nav-black"}>
     <nav
       className={
-        pathname === "/"
+        color === "light"
           ? `${styles.nav} ${styles.light}`
           : `${styles.nav} ${styles.dark}`
       }
@@ -30,7 +41,7 @@ const NavBlock = ({ pathname }) => {
           <NavLink to={routePortfolioPage()}>ПОРТФОЛИО</NavLink>
         </li>
         <li>
-          <NavLink to={routeDevelopmentPage()}>КОНТАКТЫ</NavLink>
+          <NavLink to={routeContactsPage()}>КОНТАКТЫ</NavLink>
         </li>
       </ul>
     </nav>

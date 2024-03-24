@@ -26,15 +26,19 @@ const ContactsPage = () => {
         offset.leftEdgeBlock = `${
           blockRef.current.getBoundingClientRect().left
         }px`;
-        // console.log("до блока", left);
+        console.log(
+          "до блока",
+          blockRef.current.getBoundingClientRect().left,
+          offset.leftEdgeBlock
+        );
       }
 
-      if (containerRef.current) {
-        const { left, right } = containerRef.current.getBoundingClientRect();
-        offset.leftEdgeBlock = `${left}px`;
-        offset.rightEdgeContainer = `${right}px`;
-        // console.log("до края", right);
-      }
+      // if (containerRef.current) {
+      //   const { left, right } = containerRef.current.getBoundingClientRect();
+      //   offset.leftEdgeBlock = `${left}px`;
+      //   offset.rightEdgeContainer = `${right}px`;
+      //   // console.log("до края", right);
+      // }
 
       setOffset(offset);
     };
@@ -48,45 +52,51 @@ const ContactsPage = () => {
   return (
     <section className={styles.root}>
       <div className="container" ref={containerRef}>
-        <div className={styles.wrapper}>
+        <div
+          className={styles.wrapper}
+          style={{
+            "--distance-block": offset.leftEdgeBlock,
+            // "--distance-finish-container": offset.rightEdgeContainer,
+            // "--distance-start-container": offset.leftEdgeContainer,
+          }}
+        >
           <div className={styles.left}>
             <div className={styles.performance}>
               <p className={styles.ourСontacts}>НАШИ КОНТАКТЫ</p>
               <h2 className={styles.title}>
-                <span className={styles.free}>СВЯЗАТЬСЯ</span>
-                <span className={styles.overlap}>С НАМИ</span>
+                СВЯЗАТЬСЯ
+                <em>С НАМИ</em>
               </h2>
-            </div>
-
-            <div
-              className={styles.box}
-              style={{
-                "--distance-block": offset.leftEdgeBlock,
-                "--distance-finish-container": offset.rightEdgeContainer,
-                "--distance-start-container": offset.leftEdgeContainer,
-              }}
-            ></div>
-          </div>
-          <div ref={blockRef} className={styles.right}>
-            <div className={styles.description}>
-              <div>
-                <span>What’s app</span>
-                <span>+7 925 180 00 99</span>
-              </div>
-              <div>
-                <span>Telegram</span>
-                <span>@prowellness</span>
-              </div>
-              <div>
-                <span>Phone</span>
-                <span>+7 925 180 00 99</span>
-              </div>
             </div>
           </div>
         </div>
       </div>
+      {/* <div
+        className={styles.box}
+        style={{
+          "--distance-block": offset.leftEdgeBlock,
+          "--distance-finish-container": offset.rightEdgeContainer,
+          "--distance-start-container": offset.leftEdgeContainer,
+        }}
+      ></div> */}
+      <div ref={blockRef} className={styles.right}>
+        <div className={styles.description}>
+          <div>
+            <span>What’s app</span>
+            <span>+7 925 180 00 99</span>
+          </div>
+          <div>
+            <span>Telegram</span>
+            <span>@prowellness</span>
+          </div>
+          <div>
+            <span>Phone</span>
+            <span>+7 925 180 00 99</span>
+          </div>
+        </div>
+      </div>
 
-      <SendingForm />
+      {/* <SendingForm /> */}
     </section>
   );
 };

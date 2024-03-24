@@ -1,8 +1,8 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import logo_white from "assets/img/logo_white.svg";
-import logo_black from "assets/img/logo_Black.svg";
+import logo_white from "assets/img/logo_White_letters.svg";
+import logo_black from "assets/img/logo_Black_letters.svg";
 import styles from "./styles.module.scss";
 import hexToRgb from "utils/hexToRgb";
 import removeAlphaFromRgb from "utils/removeAlphaFromRgb";
@@ -49,8 +49,6 @@ const Footer = () => {
       const newColor = removeAlphaFromRgb(
         window.getComputedStyle(document.body).backgroundColor
       );
-
-      console.log("newColor", newColor);
       setСurrentBackgroundColor(newColor);
     };
 
@@ -78,8 +76,8 @@ const Footer = () => {
               <img
                 src={
                   currentBackgroundColor !== lightColor
-                    ? logo_black
-                    : logo_white
+                    ? logo_white
+                    : logo_black
                 }
                 alt="Логотип"
               />

@@ -1,16 +1,27 @@
-// import { useLocation } from "react-router-dom";
-// import Logo_Long_Bronze from "assets/img/Logo_Long_Bronze.svg";
-// import Logo_Long_White from "assets/img/Logo_Long_White.svg";
-import Logo_Black from "assets/img/logo_Black.svg";
+import logo_white from "assets/img/logo_White_letters.svg";
+// import logo_black from "assets/img/logo_Black_letters.svg";
+import logo_gold from "assets/img/logo_Gold_letters.svg";
 import styles from "./styles.module.scss";
+import { useLocation } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const Logotip = () => {
-  // const location = useLocation();
+  const [logo, setLogo] = useState(logo_white);
+  const pathname = useLocation().pathname;
+
+  useEffect(() => {
+    if (pathname === "/") {
+      setLogo(logo_white);
+    } else {
+      setLogo(logo_gold);
+    }
+  }, [pathname]);
+
   return (
     <img
       className={styles.logo}
-      // src={location.pathname === "/" ? Logo_Long_White : Logo_Long_Bronze}
-      src={Logo_Black}
+      // src={pathname === "/" ? logo_gold : logo_white}
+      src={logo}
       alt="Логотип"
     />
   );
