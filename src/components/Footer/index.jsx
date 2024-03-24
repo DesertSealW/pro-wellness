@@ -4,12 +4,17 @@ import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 import logo_white from "assets/img/logo_white.svg";
 import logo_black from "assets/img/logo_Black.svg";
 import styles from "./styles.module.scss";
+import hexToRgb from "utils/hexToRgb";
+import removeAlphaFromRgb from "utils/removeAlphaFromRgb";
 
 const Footer = () => {
   const [isTop, setIsTop] = useState(true);
   const body = document.body;
 
-  const lightColor = getComputedStyle(body).getPropertyValue("--light").trim(); // Получаем значение переменной --light
+  const lightColor = hexToRgb(
+    getComputedStyle(body).getPropertyValue("--light").trim()
+  ); // Получаем значение переменной --light
+  console.log(lightColor);
   // const currentBackgroundColor =
   //   getComputedStyle(body).getPropertyValue("--background-color");
 
@@ -41,8 +46,11 @@ const Footer = () => {
 
   useEffect(() => {
     const handleBackgroundColorChange = () => {
-      const newColor =
-        getComputedStyle(body).getPropertyValue("--background-color");
+      const newColor = removeAlphaFromRgb(
+        window.getComputedStyle(document.body).backgroundColor
+      );
+
+      console.log("newColor", newColor);
       setСurrentBackgroundColor(newColor);
     };
 
@@ -69,7 +77,7 @@ const Footer = () => {
             <div>
               <img
                 src={
-                  currentBackgroundColor === lightColor
+                  currentBackgroundColor !== lightColor
                     ? logo_black
                     : logo_white
                 }
