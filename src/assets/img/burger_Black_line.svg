@@ -1,0 +1,14 @@
+<svg width="30" height="30" style="border: none;" viewBox="0 0 30 30" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .bg { fill: white; } /* Теперь стиль для белого фона */
+    .stripe { stroke: black; stroke-width: 2; stroke-linecap: round; stroke-linejoin: round; } /* Увеличенная толщина линий */
+  </style>
+  <g id="icon/30/align-justify">
+    <rect x="0" y="0" width="30" height="30" class="bg" /> <!-- Белый фон -->
+    <path id="Vector" d="M26.25 12.5H3.75" class="stripe" />
+    <path id="Vector_2" d="M26.25 7.5H3.75" class="stripe" />
+    <path id="Vector_3" d="M26.25 17.5H3.75" class="stripe" />
+    <path id="Vector_4" d="M26.25 22.5H3.75" class="stripe" />
+  </g>
+</svg>
+

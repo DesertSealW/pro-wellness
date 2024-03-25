@@ -4,12 +4,14 @@ import SocialBlock from "./SocialBlock";
 import NavBlock from "./NavBlock";
 import Logotip from "./Logotip";
 import burger from "assets/img/burger3.svg";
+import burger_black_line from "assets/img/burger_Black_line_3.svg";
 import { routeMain as routeMainPage } from "pages/MainPage";
 import ModalWindow from "components/AppContent/ModalWindow";
 import styles from "./styles.module.scss";
 
 const Header = () => {
-  const location = useLocation();
+  // const pathname = useLocation().pathname;
+  const pathname = "Костыль";
   const [modalMenu, setModalMenu] = useState(false);
   // console.log(location.pathname);
   // debugger;
@@ -17,7 +19,7 @@ const Header = () => {
   return (
     <header
       className={`${styles.root} ${
-        location.pathname === "/" ? styles.bgDark : styles.bgLate
+        pathname === "/" ? styles.bgDark : styles.bgLate
       }`}
     >
       {/* <div className={styles.container}> */}
@@ -28,15 +30,12 @@ const Header = () => {
           </div>
           <div className={styles.logo}>
             <Link to={routeMainPage()}>
-              <Logotip
-                pathname={location.pathname}
-                className={styles.Logotip}
-              />
+              <Logotip pathname={pathname} className={styles.Logotip} />
             </Link>
           </div>
           <div className={styles.right}>
             <div className={styles.socialBlock}>
-              <SocialBlock pathname={location.pathname} />
+              <SocialBlock pathname={pathname} />
               {/* <ButtonLangChange pathname={location.pathname} /> */}
             </div>
 
@@ -48,7 +47,10 @@ const Header = () => {
                 setModalMenu(true);
               }}
             >
-              <img src={burger} alt="Кнопка бургера" />
+              <img
+                src={pathname === "/" ? burger : burger_black_line}
+                alt="Кнопка бургера"
+              />
             </button>
           </div>
         </div>

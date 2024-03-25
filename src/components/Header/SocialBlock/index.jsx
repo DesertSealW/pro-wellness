@@ -13,16 +13,19 @@ import telegram_gold from "assets/social-icons/telegram_gold.svg";
 import styles from "./styles.module.scss";
 
 const SocialBlock = () => {
-  const [color, setColor] = useState("gold");
-  const pathname = useLocation().pathname;
+  // const [color, setColor] = useState("gold");
+  // const pathname = useLocation().pathname;
+  // const pathname = "Костыль";
 
-  useEffect(() => {
-    if (pathname === "/") {
-      setColor("white");
-    } else {
-      setColor("gold");
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (pathname === "/") {
+  //     setColor("white");
+  //   } else {
+  //     setColor("gold");
+  //   }
+  // }, [pathname]);
+
+  const color = "gold";
 
   return (
     <ul className={styles.social}>

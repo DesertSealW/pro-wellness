@@ -178,10 +178,16 @@
 @media (max-width: 1024px) {
   .root {
     padding-top: clamp(
-      143px,
-      calc(8.9375rem + ((1vw - 12.8px) * -8.1522)),
-      218px
+      82px,
+      calc(10.9375rem + ((1vw - 10.24px) * 14.006)),
+      175px
     );
+    // clamp(
+    //   143px,
+    //   calc(13.625rem + ((1vw - 10.24px) * 11.2952)),
+    //   218px
+    // );
+
     padding-bottom: clamp(
       78px,
       calc(9.0625rem + ((1vw - 10.24px) * 10.0904)),

@@ -6,16 +6,18 @@ import { useLocation } from "react-router-dom";
 import { useEffect, useState } from "react";
 
 const Logotip = () => {
-  const [logo, setLogo] = useState(logo_white);
-  const pathname = useLocation().pathname;
+  // const [logo, setLogo] = useState(logo_white);
+  // const pathname = useLocation().pathname;
 
-  useEffect(() => {
-    if (pathname === "/") {
-      setLogo(logo_white);
-    } else {
-      setLogo(logo_gold);
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (pathname === "/") {
+  //     setLogo(logo_white);
+  //   } else {
+  //     setLogo(logo_gold);
+  //   }
+  // }, [pathname]);
+
+  const logo = logo_gold;
 
   return (
     <img

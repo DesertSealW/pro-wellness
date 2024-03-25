@@ -8,16 +8,19 @@ import styles from "./styles.module.scss";
 import { useEffect, useState } from "react";
 
 const NavBlock = () => {
-  const [color, setColor] = useState("gold");
-  const pathname = useLocation().pathname;
+  // const [color, setColor] = useState("gold");
+  // const pathname = useLocation().pathname;
+  // const pathname = "Костыль";
 
-  useEffect(() => {
-    if (pathname === "/") {
-      setColor("light");
-    } else {
-      setColor("dark");
-    }
-  }, [pathname]);
+  // useEffect(() => {
+  //   if (pathname === "/") {
+  //     setColor("light");
+  //   } else {
+  //     setColor("dark");
+  //   }
+  // }, [pathname]);
+
+  const color = "dark";
 
   return (
     <nav

@@ -15,7 +15,7 @@ import DevelopmentPage, {
 
 import Header from "components/Header";
 
-import "./styles.module.scss";
+import styles from "./styles.module.scss";
 import Footer from "components/Footer";
 
 // import Footer from "components/Footer";
@@ -25,9 +25,9 @@ import Footer from "components/Footer";
 
 const AppContent = () => {
   return (
-    <div>
+    <div className={styles.wrapper}>
       <Header />
-      <main className="main-wrapper">
+      <main className={styles.mainWrapper}>
         <Routes>
           <Route path="/" element={<MainPage />} />
           <Route path={routeAboutPage()} element={<AboutPage />} />

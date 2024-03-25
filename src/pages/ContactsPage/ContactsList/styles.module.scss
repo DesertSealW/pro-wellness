@@ -1,0 +1,48 @@
+.list {
+  display: flex;
+  flex-direction: column;
+
+  color: var(--grey4);
+  text-align: right;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 22px; /* 157.143% */
+  height: 100%;
+
+  li {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+.watsApp {
+  margin-bottom: 27px;
+}
+
+.topContacts {
+  margin-bottom: auto;
+}
+
+@media (max-width: 1280px) {
+  .list {
+    font-size: clamp(10px, calc(0.875rem + ((1vw - 12.8px) * 0.4348)), 14px);
+    line-height: clamp(18px, calc(1.375rem + ((1vw - 12.8px) * 0.4348)), 22px);
+  }
+}
+
+@media (max-width: 1024px) {
+  .list {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .watsApp {
+    margin-bottom: 16px;
+  }
+  .list li {
+    align-items: start;
+  }
+  .phone {
+    align-items: end;
+  }
+}

@@ -5,7 +5,8 @@ body {
   font-family: Montserrat;
   font-weight: 300;
   background: var(--light);
-  transition: background-color 3s ease;
+  transition: background-color 1.8s ease-out;
+  height: 100%;
 }
 
 .switchBackgroundColor {

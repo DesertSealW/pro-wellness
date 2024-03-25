@@ -1,4 +1,11 @@
-.main-wrapper {
+.wrapper {
   display: flex;
   flex-direction: column;
+  min-height: 100%;
+}
+
+.mainWrapper {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
 }

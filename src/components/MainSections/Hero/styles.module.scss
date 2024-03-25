@@ -154,7 +154,10 @@ h1 {
   //    }
 }
 
-@media (max-width: 800px) {
+@media (max-width: 1024px) {
+  .root {
+    padding-top: clamp(0px, calc(0rem + ((1vw - 10.24px) * -5.8735)), 39px);
+  }
   .title {
     font-weight: 300;
   }
