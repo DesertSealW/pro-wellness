@@ -7,7 +7,9 @@
 
   min-height: calc(100vh - 120px);
   // height: clamp(646px, calc(60.0625rem + ((1vw - 19.2px) * 49.2188)), 961px);
-  background-image: url("./../../../assets/img/mainHero/img1.jpg");
+  background-image: url("./../../../assets/img/mainHero/TALASANA1920.jpg");
+  // background-image: url("./../../../assets/img/mainHero/img1.jpg");
+  //  ("./../../../assets/img/mainHero/TALASANA1920.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: bottom center;
@@ -30,10 +32,11 @@
   &::after {
     content: "";
     position: absolute;
-    top: -16px;
+    top: -1px;
     left: 0;
     display: block;
     width: 100%;
+    // height: clamp(42px, calc(8.125rem + ((1vw - 19.2px) * 13.75)), 130px);
     height: 130px;
     background-color: var(--light);
   }
@@ -110,11 +113,17 @@ h1 {
   .root {
     // height: calc(100vh - 117px);
     // height: 683px;
-    // background-image: url("./../../../assets/img/mainHero/hero1280.png");
+    // background-image: url("./../../../assets/img/mainHero/TALASANA1920.jpg");
+    min-height: clamp(
+      365px,
+      calc(37.125rem + ((1vw - 12.8px) * 24.8913)),
+      594px
+    );
   }
 
   .root::after {
-    height: clamp(70px, calc(8.125rem + ((1vw - 12.8px) * 6.5217)), 130px);
+    // height: clamp(70px, calc(8.125rem + ((1vw - 12.8px) * 6.5217)), 130px);
+    height: clamp(42px, calc(2.625rem + ((1vw - 12.8px) * -7.1739)), 108px);
   }
 
   .title {
@@ -158,15 +167,20 @@ h1 {
   .root {
     padding-top: clamp(0px, calc(0rem + ((1vw - 10.24px) * -5.8735)), 39px);
   }
+
+  .root::after {
+    height: clamp(77px, calc(5.125rem + ((1vw - 10.24px) * 0.753)), 82px);
+  }
   .title {
     font-weight: 300;
   }
 }
 
 @media (max-width: 480px) {
-  .root {
-    background-image: url("./../../../assets/img/mainHero/img-m.jpg");
-  }
+  // .root {
+  //   background-image: url("./../../../assets/img/mainHero/img-m.jpg");
+  //   // background-image: url("./../../../assets/img/mainHero/img-m.jpg");
+  // }
 
   .callButton {
     display: none;

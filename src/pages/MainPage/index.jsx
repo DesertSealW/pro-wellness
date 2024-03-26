@@ -16,6 +16,7 @@ const MainPage = () => {
       <AboutSection />
       <СhangingСolorTheme />
       <ServicesSection />
+
       {/* <DiscussionSection /> */}
     </>
   );

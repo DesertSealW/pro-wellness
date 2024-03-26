@@ -1,8 +1,7 @@
 .root {
-  color: var(--light);
-  // padding: 51px 0 32px 0;
-  // clamp(37px, calc(3.1875rem + ((1vw - 19.2px) * 2.1875)), 51px)
+  flex: 0 1 auto;
   padding: 51px 0 clamp(32px, calc(2rem + ((1vw - 19.2px) * -1.7187)), 43px) 0;
+  color: var(--light);
 }
 
 .bgDark {
@@ -47,6 +46,10 @@
   display: none;
   margin-left: auto;
   border: none;
+  img {
+    // z-index: 3;
+    // position: relative;
+  }
 }
 
 @media (max-width: 1280px) {

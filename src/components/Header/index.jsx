@@ -18,9 +18,10 @@ const Header = () => {
 
   return (
     <header
-      className={`${styles.root} ${
-        pathname === "/" ? styles.bgDark : styles.bgLate
-      }`}
+      className={styles.root}
+      // className={`${styles.root} ${
+      //   pathname === "/" ? styles.bgDark : styles.bgLate
+      // }`}
     >
       {/* <div className={styles.container}> */}
       <div className="container">

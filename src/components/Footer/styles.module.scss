@@ -1,9 +1,9 @@
 // @import "global/styles/global";
 
 .root {
+  flex: 0 1 auto;
   // background: var(--light);
   padding: clamp(69px, calc(4.6875rem + ((1vw - 19.2px) * 0.9375)), 75px) 0;
-  flex: 0 0 auto;
 }
 
 .wrapper {

@@ -11,19 +11,41 @@
       margin-right: 0;
     }
   }
-}
-
-.dark {
-  a {
-    color: var(--dark);
+  a:hover {
+    color: var(--brown);
+  }
+  a .active {
+    background-color: var(--brown);
+    color: white;
+  }
+  a:active {
+    background-color: var(--brown);
+    color: white;
   }
 }
-
-.light {
-  a {
-    color: var(--light);
-  }
+li .active {
+  background-color: var(--brown);
+  color: white;
 }
+
+.active {
+  background-color: var(--brown);
+  color: white;
+}
+
+// .dark {
+//   a {
+//     color: var(--dark);
+//   }
+// }
+
+// .light {
+//   a {
+//     color: var(--light);
+//   }
+// }
+
+// background: var(--brown);
 
 .menu {
   display: flex;

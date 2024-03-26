@@ -14,7 +14,7 @@ const Footer = () => {
   const lightColor = hexToRgb(
     getComputedStyle(body).getPropertyValue("--light").trim()
   ); // Получаем значение переменной --light
-  console.log(lightColor);
+
   // const currentBackgroundColor =
   //   getComputedStyle(body).getPropertyValue("--background-color");
 
@@ -67,7 +67,7 @@ const Footer = () => {
   }, []);
 
   return (
-    <div className={styles.root}>
+    <footer className={styles.root}>
       {/* <div className={styles.container}> */}
       <div className="container">
         <div className={styles.wrapper}>
@@ -131,7 +131,7 @@ const Footer = () => {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
 };
 
