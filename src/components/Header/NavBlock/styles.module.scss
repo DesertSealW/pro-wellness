@@ -14,23 +14,12 @@
   a:hover {
     color: var(--brown);
   }
-  a .active {
-    background-color: var(--brown);
-    color: white;
-  }
-  a:active {
-    background-color: var(--brown);
-    color: white;
-  }
-}
-li .active {
-  background-color: var(--brown);
-  color: white;
 }
 
-.active {
-  background-color: var(--brown);
-  color: white;
+::global {
+  .active {
+    color: var(--brown);
+  }
 }
 
 // .dark {

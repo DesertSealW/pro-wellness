@@ -4,7 +4,7 @@ import "./styles.module.scss";
 const PortfolioPage = () => {
   return (
     <section>
-      <h1 style={{ fontSize: "25px", color: "red" }}>About</h1>;
+      <h1 style={{ fontSize: "45px", color: "red" }}>PortfolioPage</h1>;
     </section>
   );
 };
