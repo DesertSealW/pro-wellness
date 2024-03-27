@@ -73,7 +73,7 @@
   bottom: -3px;
   left: 50%;
   transform: translateX(-50%);
-  transition: width 0.7s;
+  transition: width 0.4s;
 }
 
 .get:hover::after {
@@ -134,7 +134,7 @@
   width: 100%;
   object-position: center;
   object-fit: cover;
-  transition: transform 0.7s;
+  transition: transform 0.4s;
 }
 
 .smolImg:hover,

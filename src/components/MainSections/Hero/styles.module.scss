@@ -88,7 +88,7 @@
 .callButton {
   display: flex;
   position: inherit;
-  background: var(--gold);
+  background: var(--brown);
   padding: 16px 13px 16px 13px;
   font-weight: 400;
   line-height: 1.55;
@@ -101,7 +101,7 @@
 
 .callButton:hover {
   background: var(--light);
-  color: var(--gold);
+  color: var(--brown);
 }
 
 h1 {

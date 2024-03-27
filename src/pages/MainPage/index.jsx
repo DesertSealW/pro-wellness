@@ -13,8 +13,8 @@ const MainPage = () => {
     <>
       <Hero />
       <PortfolioSection />
-      <AboutSection />
       <СhangingСolorTheme />
+      <AboutSection />
       <ServicesSection />
 
       {/* <DiscussionSection /> */}

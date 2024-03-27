@@ -113,7 +113,7 @@
 
   .title {
     font-size: clamp(30px, calc(5.625rem + ((1vw - 12.8px) * 6.5217)), 90px);
-    line-height: clamp(30px, calc(4.5rem + ((1vw - 12.8px) * 4.5652)), 72px);
+    line-height: clamp(24px, calc(4.5rem + ((1vw - 12.8px) * 5.2174)), 72px);
   }
 
   .pict {
@@ -151,6 +151,12 @@
   .performance {
     grid-template-columns: 1fr 2fr;
     gap: 37px;
+    padding-right: 15px;
+    margin-bottom: 21px;
+  }
+  .title {
+    display: inline;
+    text-align: right;
   }
 
   .philosophy {
@@ -161,7 +167,7 @@
   .aboutFrame {
     display: flex;
     max-width: var(--interval-container);
-    height: (120px, calc(20.4375rem + ((1vw - 10.24px) * 31.1747)), 327px);
+    height: clamp(120px, calc(20.4375rem + ((1vw - 10.24px) * 31.1747)), 327px);
     width: 100%;
     object-position: center;
     object-fit: cover;

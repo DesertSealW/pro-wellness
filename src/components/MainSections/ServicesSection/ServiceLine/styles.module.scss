@@ -91,6 +91,7 @@
   background-color: var(--grey3);
   left: 50%;
   transform: translateX(-50%);
+  transition: width 0.4s;
 }
 
 .request:hover::after {
