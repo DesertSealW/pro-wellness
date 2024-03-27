@@ -160,14 +160,15 @@
     justify-content: space-between;
     align-items: flex-start;
 
-    margin-bottom: 11px;
+    margin-bottom: 4px;
   }
 
   .tip {
   }
 
   .description {
-    max-width: 150px;
+    // max-width: 150px;
+    min-width: 340px;
     padding: 0;
     line-height: 18.8px;
     color: var(--grey3);

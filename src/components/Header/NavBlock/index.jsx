@@ -24,7 +24,7 @@ const NavBlock = () => {
 
   return (
     <nav
-      className={
+      className={ 
         color === "light"
           ? `${styles.nav} ${styles.light}`
           : `${styles.nav} ${styles.dark}`

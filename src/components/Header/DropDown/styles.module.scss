@@ -1,0 +1,32 @@
+.wrapper {
+  padding: 60px;
+  width: 100%;
+  background: var(--light);
+  display: flex;
+  flex-direction: column;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  color: var(--brown, #ca8f65);
+
+  font-family: Montserrat;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 250%;
+}
+
+.item {
+  color: var(--brown, #ca8f65);
+  font-weight: 700;
+  letter-spacing: 5px;
+}
+
+.navigation {
+  margin: 0 auto 50px auto;
+}
+
+.social {
+  display: flex;
+  margin: 0 auto;
+}

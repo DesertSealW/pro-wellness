@@ -157,6 +157,12 @@
   .title {
     display: inline;
     text-align: right;
+    margin-left: clamp(
+      52px,
+      calc(9.375rem + ((1vw - 10.24px) * 14.759)),
+      150px
+    );
+    transform: translateY(4px);
   }
 
   .philosophy {

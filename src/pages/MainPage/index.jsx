@@ -3,7 +3,7 @@ import routeMain from "./routes";
 import PortfolioSection from "components/MainSections/PortfolioSection";
 import AboutSection from "components/MainSections/AboutSection";
 import ServicesSection from "components/MainSections/ServicesSection";
-import СhangingСolorTheme from "components/AppContent/СhangingСolorTheme";
+import СhangingСolorTheme from "components/ServiceСomponents/СhangingСolorTheme";
 // import DiscussionSection from "components/MainSections/DiscussionSection";
 
 import "./styles.module.scss";

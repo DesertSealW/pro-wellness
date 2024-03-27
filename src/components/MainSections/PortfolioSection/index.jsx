@@ -37,7 +37,7 @@ const PortfolioSection = () => {
                 alt="Банный комплекс 'Карелия"
               />
             </picture>
-            <p className={styles.coment1}>Банный комплекс "Карелия"</p>
+            <h3 className={styles.coment1}>Банный комплекс "Карелия"</h3>
             <p className={styles.coment2}>Здания, фасады, благоустройство</p>
           </div>
           <div className={styles.two}>
@@ -51,7 +51,7 @@ const PortfolioSection = () => {
                   alt="Санаторий Таежный"
                 />
               </picture>
-              <p className={styles.coment1}>Санаторий Таежный</p>
+              <h3 className={styles.coment1}>Санаторий Таежный</h3>
               <p className={styles.coment2}>Здания, фасады, благоустройство</p>
             </div>
             <div>
@@ -64,7 +64,7 @@ const PortfolioSection = () => {
                   alt="Институт им. Хлопина"
                 />
               </picture>
-              <p className={styles.coment1}>Институт им. Хлопина</p>
+              <h3 className={styles.coment1}>Институт им. Хлопина</h3>
               <p className={styles.coment2}>Здания, фасады, благоустройство</p>
             </div>
           </div>

@@ -4,6 +4,7 @@
   flex: 0 1 auto;
   background: var(--light);
   padding-top: clamp(69px, calc(4.6875rem + ((1vw - 19.2px) * 0.9375)), 75px);
+  padding-bottom: 93px;
 }
 
 .wrapper {
@@ -16,16 +17,17 @@
 
 .menus {
   display: flex;
-  padding-right: clamp(
-    80px,
-    calc(23.125rem + ((1vw - 19.2px) * 45.3125)),
-    370px
-  );
+  // padding-right: clamp(
+  //   80px,
+  //   calc(23.125rem + ((1vw - 19.2px) * 45.3125)),
+  //   370px
+  // );
+  padding-right: clamp(0px, calc(17.25rem + ((1vw - 19.2px) * 43.125)), 276px);
 }
 
-.entitlement {
-  font-size: clamp(10px, calc(0.75rem + ((1vw - 19.2px) * 0.3125)), 12px);
-  line-height: clamp(10px, calc(1.1875rem + ((1vw - 19.2px) * 1.4063)), 19px);
+.first {
+  font-size: 12px;
+  line-height: 19px;
   font-weight: 400;
 }
 
@@ -41,6 +43,7 @@
 .first {
   max-width: 300px;
   width: 100%;
+  font-weight: 400;
 }
 
 .first img {
@@ -105,17 +108,16 @@
     // padding: 90px 0;
   }
 
-  .first img {
-    // width: 200px;
-    // margin-bottom: 29px;
+  .wrapper {
+    grid-template-columns: 1fr auto 157px;
+  }
+  .menus {
+    padding-right: 0;
   }
 
-  .entitlement {
+  .first {
     font-size: clamp(9px, calc(0.75rem + ((1vw - 12.8px) * 0.3261)), 12px);
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: 1.3px;
-    margin-bottom: 3px;
+    line-height: clamp(9px, calc(1.1875rem + ((1vw - 12.8px) * 1.087)), 19px);
   }
 
   .portfolio,
@@ -146,10 +148,18 @@
       calc(1.1625rem + ((1vw - 12.8px) * 0.6087)),
       18.6px
     );
+    width: fit-content;
   }
 }
 
 @media (max-width: 1024px) {
+  .root {
+    padding-top: clamp(
+      69px,
+      calc(4.3125rem + ((1vw - 10.24px) * -1.9578)),
+      82px
+    );
+  }
   .wrapper {
     grid-template-columns: 1fr;
   }
@@ -162,7 +172,7 @@
   }
 
   .first {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .first * {
@@ -177,12 +187,32 @@
       275px
     );
     width: 100%;
-    margin-bottom: 30px;
+    max-height: 32px;
+    height: 100%;
+    margin-bottom: 18px;
+  }
+  .entitlement {
+    margin-bottom: 3px;
   }
 
-  .second {
-    padding-left: 0;
-    margin-bottom: 30px;
+  .menus,
+  .second,
+  .third {
+    margin: 0;
+    padding: 0;
+  }
+
+  .menus {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 clamp(17px, calc(12.5rem + ((1vw - 10.24px) * 27.5602)), 200px);
+  }
+
+  .portfolio,
+  .contacts {
+    margin: 0;
+    padding: 0;
   }
 
   .goTop {
@@ -192,7 +222,7 @@
 
 @media (max-width: 480px) {
   .third {
-    padding-left: 70px;
+    padding-left: 84px;
   }
 
   .fourth {

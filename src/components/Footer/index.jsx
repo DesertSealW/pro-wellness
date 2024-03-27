@@ -3,6 +3,7 @@ import React, { useEffect, useState } from "react";
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 // import logo_white from "assets/img/logo_White_letters.svg";
 import logo_black from "assets/img/logo_Black_letters.svg";
+// import logo_black from "assets/img/burger_Black_line_3.png";
 import styles from "./styles.module.scss";
 // import hexToRgb from "utils/hexToRgb";
 // import removeAlphaFromRgb from "utils/removeAlphaFromRgb";
@@ -72,53 +73,51 @@ const Footer = () => {
       <div className="container">
         <div className={styles.wrapper}>
           <div className={styles.first}>
-            <div>
-              <img
-                src={
-                  logo_black
-                  // currentBackgroundColor !== lightColor
-                  //   ? logo_white
-                  //   : logo_black
-                }
-                alt="Логотип"
-              />
-            </div>
+            <img
+              src={
+                logo_black
+                // currentBackgroundColor !== lightColor
+                //   ? logo_white
+                //   : logo_black
+              }
+              alt="Логотип"
+            />
             <p className={styles.entitlement}>Все права защищены © 2023</p>
             <p>Сделано в Deviart</p>
           </div>
           <div className={styles.menus}>
             <div className={styles.second}>
               <nav>
-                <Link to={routeDevelopmentPage()}>
-                  <p className={styles.portfolio}>ПОРТФОЛИО</p>
+                <Link to={routeDevelopmentPage()} className={styles.portfolio}>
+                  ПОРТФОЛИО
                 </Link>
                 <ul className={styles.list}>
                   <li>
-                    <Link to={routeDevelopmentPage()}>
-                      <p className={styles.item}>КОНЦЕПЦИЯ</p>
+                    <Link to={routeDevelopmentPage()} className={styles.item}>
+                      КОНЦЕПЦИЯ
                     </Link>
                   </li>
                   <li>
-                    <Link to={routeDevelopmentPage()}>
-                      <p className={styles.item}>АРХИТЕКТУРА</p>
+                    <Link to={routeDevelopmentPage()} className={styles.item}>
+                      АРХИТЕКТУРА
                     </Link>
                   </li>
                 </ul>
               </nav>
             </div>
             <div className={styles.third}>
-              <Link to={routeDevelopmentPage()}>
-                <p className={styles.contacts}>КОНТАКТЫ</p>
+              <Link to={routeDevelopmentPage()} className={styles.contacts}>
+                КОНТАКТЫ
               </Link>
               <ul className={styles.list}>
                 <li>
-                  <a className={styles.item} href="tel:+78124084151">
-                    +7 (812) 408-4151
+                  <a className={styles.item} href="tel:+79251800099">
+                    +7 (925) 180 00 99
                   </a>
                 </li>
                 <li>
-                  <a className={styles.item} href="mailto:info@taiga-arch.com">
-                    info@taiga-arch.com
+                  <a className={styles.item} href="tel:+79251800099">
+                    @prowellness
                   </a>
                 </li>
               </ul>
