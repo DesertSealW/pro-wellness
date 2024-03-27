@@ -1,24 +1,24 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
 import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
-import logo_white from "assets/img/logo_White_letters.svg";
+// import logo_white from "assets/img/logo_White_letters.svg";
 import logo_black from "assets/img/logo_Black_letters.svg";
 import styles from "./styles.module.scss";
-import hexToRgb from "utils/hexToRgb";
-import removeAlphaFromRgb from "utils/removeAlphaFromRgb";
+// import hexToRgb from "utils/hexToRgb";
+// import removeAlphaFromRgb from "utils/removeAlphaFromRgb";
 
 const Footer = () => {
   const [isTop, setIsTop] = useState(true);
-  const body = document.body;
+  // const body = document.body;
 
-  const lightColor = hexToRgb(
-    getComputedStyle(body).getPropertyValue("--light").trim()
-  ); // Получаем значение переменной --light
+  // const lightColor = hexToRgb(
+  //   getComputedStyle(body).getPropertyValue("--light").trim()
+  // ); // Получаем значение переменной --light
 
   // const currentBackgroundColor =
   //   getComputedStyle(body).getPropertyValue("--background-color");
 
-  const [currentBackgroundColor, setСurrentBackgroundColor] = useState("");
+  // const [currentBackgroundColor, setСurrentBackgroundColor] = useState("");
 
   const scrollToTop = () => {
     window.scrollTo({
@@ -44,27 +44,27 @@ const Footer = () => {
     };
   }, []);
 
-  useEffect(() => {
-    const handleBackgroundColorChange = () => {
-      const newColor = removeAlphaFromRgb(
-        window.getComputedStyle(document.body).backgroundColor
-      );
-      setСurrentBackgroundColor(newColor);
-    };
+  // useEffect(() => {
+  //   const handleBackgroundColorChange = () => {
+  //     const newColor = removeAlphaFromRgb(
+  //       window.getComputedStyle(document.body).backgroundColor
+  //     );
+  //     setСurrentBackgroundColor(newColor);
+  //   };
 
-    handleBackgroundColorChange();
-    document.body.addEventListener(
-      "transitionend",
-      handleBackgroundColorChange
-    );
+  //   handleBackgroundColorChange();
+  //   document.body.addEventListener(
+  //     "transitionend",
+  //     handleBackgroundColorChange
+  //   );
 
-    return () => {
-      document.body.removeEventListener(
-        "transitionend",
-        handleBackgroundColorChange
-      );
-    };
-  }, []);
+  //   return () => {
+  //     document.body.removeEventListener(
+  //       "transitionend",
+  //       handleBackgroundColorChange
+  //     );
+  //   };
+  // }, []);
 
   return (
     <footer className={styles.root}>
@@ -75,9 +75,10 @@ const Footer = () => {
             <div>
               <img
                 src={
-                  currentBackgroundColor !== lightColor
-                    ? logo_white
-                    : logo_black
+                  logo_black
+                  // currentBackgroundColor !== lightColor
+                  //   ? logo_white
+                  //   : logo_black
                 }
                 alt="Логотип"
               />
