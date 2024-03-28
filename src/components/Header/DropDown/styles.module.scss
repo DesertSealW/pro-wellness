@@ -8,18 +8,23 @@
 .menu {
   display: flex;
   flex-direction: column;
-  color: var(--brown, #ca8f65);
+  // color: var(--brown, #ca8f65);
 
   font-family: Montserrat;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 250%;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 200%;
 }
 
 .item {
   color: var(--brown, #ca8f65);
   font-weight: 700;
   letter-spacing: 5px;
+  transition: 0.4s;
+}
+
+.item:hover {
+  color: var(--grey3);
 }
 
 .navigation {

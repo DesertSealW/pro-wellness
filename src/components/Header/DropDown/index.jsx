@@ -12,7 +12,7 @@ const DropDown = ({ onClose }) => {
     <ModalWindow onClose={onClose}>
       <div className={styles.wrapper}>
         <nav className={styles.navigation}>
-          <ul className={styles.menu}>
+          <ul className={styles.menu} onClick={() => onClose(false)}>
             <li>
               <NavLink to={routeAboutPage()} className={styles.item}>
                 О НАС
@@ -30,8 +30,9 @@ const DropDown = ({ onClose }) => {
             </li>
           </ul>
         </nav>
-
-        <SocialBlock className={styles.social} />
+        <div className={styles.social} onClick={() => onClose(false)}>
+          <SocialBlock />
+        </div>
       </div>
     </ModalWindow>
   );

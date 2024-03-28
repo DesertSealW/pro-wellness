@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import ReactDOM from "react-dom";
+import close from "assets/img/close.svg";
 import styles from "./styles.module.scss";
 
 const NOOP = () => {};
@@ -11,7 +12,8 @@ const ModalWindow = ({ children, onClose = NOOP }) => {
 
   useEffect(() => {
     function handleClick(event) {
-      // console.log(event);
+      console.log(event);
+      debugger;
       if (
         event.target instanceof Node &&
         !modalRef.current?.contains(event.target)
@@ -37,17 +39,7 @@ const ModalWindow = ({ children, onClose = NOOP }) => {
         ref={modalRef}
       >
         <button className={styles.btnExit} onClick={onClose}>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 24 24"
-            width="24"
-            height="24"
-          >
-            <path
-              fill="#CA8F65"
-              d="M18.3 5.7c-.4-.4-1-.4-1.4 0L12 10.6 7.1 5.7c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4.9 4.9-4.9 4.9c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l4.9-4.9 4.9 4.9c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-4.9-4.9 4.9-4.9c.4-.4.4-1 0-1.4z"
-            />
-          </svg>
+          <img src={close} alt="Закрыть" />
         </button>
         {children}
       </div>
@@ -57,3 +49,17 @@ const ModalWindow = ({ children, onClose = NOOP }) => {
 };
 
 export default ModalWindow;
+
+{
+  /* <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            width="24"
+            height="24"
+          >
+            <path
+              fill="#CA8F65"
+              d="M18.3 5.7c-.4-.4-1-.4-1.4 0L12 10.6 7.1 5.7c-.4-.4-1-.4-1.4 0-.4.4-.4 1 0 1.4l4.9 4.9-4.9 4.9c-.4.4-.4 1 0 1.4.2.2.4.3.7.3s.5-.1.7-.3l4.9-4.9 4.9 4.9c.2.2.4.3.7.3s.5-.1.7-.3c.4-.4.4-1 0-1.4l-4.9-4.9 4.9-4.9c.4-.4.4-1 0-1.4z"
+            />
+          </svg> */
+}
