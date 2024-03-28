@@ -12,8 +12,8 @@ const ModalWindow = ({ children, onClose = NOOP }) => {
 
   useEffect(() => {
     function handleClick(event) {
-      console.log(event);
-      debugger;
+      // console.log(event);
+      // debugger;
       if (
         event.target instanceof Node &&
         !modalRef.current?.contains(event.target)
