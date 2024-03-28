@@ -1,37 +1,17 @@
 .wrapper {
-  padding: 60px;
+  padding: 35px;
   width: 100%;
   background: var(--light);
   display: flex;
   flex-direction: column;
 }
-.menu {
-  display: flex;
-  flex-direction: column;
-  // color: var(--brown, #ca8f65);
-  align-items: center;
-  font-family: Montserrat;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 200%;
-}
 
-.item {
-  color: var(--brown, #ca8f65);
-  font-weight: 700;
-  letter-spacing: 5px;
-  transition: 0.4s;
-}
-
-.item:hover {
-  color: var(--grey3);
-}
-
-.navigation {
-  margin: 0 auto 50px auto;
+.navBlock {
+  margin-bottom: 78px;
 }
 
 .social {
   display: flex;
-  margin: 0 auto;
+  align-items: center;
+  // margin: 0 auto;
 }

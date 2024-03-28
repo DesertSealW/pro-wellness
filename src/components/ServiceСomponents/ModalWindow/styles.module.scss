@@ -1,6 +1,7 @@
 // @import "global/styles/global.module.scss";
 
 .modalOverlay {
+  display: none;
   position: fixed;
   left: 0;
   right: 0;
@@ -15,7 +16,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
+    width: 100vw;
     position: absolute;
     top: 0;
     // padding: 25px 0;
@@ -25,7 +26,7 @@
 
     background-color: white;
     top: -100%;
-    transition: top 3.3s ease;
+    transition: top 0.3s ease;
   }
 
   .activemodalWindow {
@@ -35,10 +36,16 @@
   .btnExit {
     position: absolute;
     background: transparent;
-    font-size: 25px;
-    font-weight: 500;
-    color: var(--brown);
-    top: 36px;
-    right: 36px;
+    // font-size: 25px;
+    // font-weight: 500;
+    // color: var(--brown);
+    top: 16px;
+    right: 16px;
+  }
+}
+
+@media (max-width: 850px) {
+  .modalOverlay {
+    display: flex;
   }
 }

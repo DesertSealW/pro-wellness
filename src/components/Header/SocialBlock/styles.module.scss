@@ -31,8 +31,16 @@
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 850px) {
   .social {
-    display: none;
+    gap: 5px;
+    img {
+      width: 30px;
+    }
   }
 }
+// @media (max-width: 320px) {
+//   .social {
+//     display: none;
+//   }
+// }

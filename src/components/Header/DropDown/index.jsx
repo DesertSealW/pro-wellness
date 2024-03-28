@@ -6,30 +6,16 @@ import { routeMain as routePortfolioPage } from "pages/PortfolioPage";
 import styles from "./styles.module.scss";
 import ModalWindow from "components/ServiceСomponents/ModalWindow";
 import SocialBlock from "../SocialBlock";
+import NavBlock from "../NavBlock";
 
 const DropDown = ({ onClose }) => {
   return (
     <ModalWindow onClose={onClose}>
       <div className={styles.wrapper}>
-        <nav className={styles.navigation}>
-          <ul className={styles.menu} onClick={() => onClose(false)}>
-            <li>
-              <NavLink to={routeAboutPage()} className={styles.item}>
-                О НАС
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={routePortfolioPage()} className={styles.item}>
-                ПОРТФОЛИО
-              </NavLink>
-            </li>
-            <li>
-              <NavLink to={routeContactsPage()} className={styles.item}>
-                КОНТАКТЫ
-              </NavLink>
-            </li>
-          </ul>
-        </nav>
+        <div className={styles.navBlock} onClick={() => onClose(false)}>
+          <NavBlock />
+        </div>
+
         <div className={styles.social} onClick={() => onClose(false)}>
           <SocialBlock />
         </div>

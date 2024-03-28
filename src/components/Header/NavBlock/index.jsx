@@ -1,11 +1,11 @@
-import { NavLink, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { routeMain as routeAboutPage } from "pages/AboutPage";
 import { routeMain as routeContactsPage } from "pages/ContactsPage";
 import { routeMain as routePortfolioPage } from "pages/PortfolioPage";
-import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
+// import { routeMain as routeDevelopmentPage } from "pages/DevelopmentPage";
 
 import styles from "./styles.module.scss";
-import { useEffect, useState } from "react";
+// import { useEffect, useState } from "react";
 
 const NavBlock = () => {
   // const [color, setColor] = useState("gold");
@@ -24,7 +24,7 @@ const NavBlock = () => {
 
   return (
     <nav
-      className={ 
+      className={
         color === "light"
           ? `${styles.nav} ${styles.light}`
           : `${styles.nav} ${styles.dark}`
@@ -32,19 +32,19 @@ const NavBlock = () => {
     >
       <ul className={styles.menu}>
         <li>
-          <NavLink to={routeAboutPage()}>О НАС</NavLink>
-        </li>
-        {/* <li>
-          <NavLink to={routeDevelopmentPage()}>КОНЦЕПЦИЯ</NavLink>
-        </li>
-        <li>
-          <NavLink to={routeDevelopmentPage()}>АРХИТЕКТУРА</NavLink>
-        </li> */}
-        <li>
-          <NavLink to={routePortfolioPage()}>ПОРТФОЛИО</NavLink>
+          <NavLink to={routeAboutPage()} className={styles.item}>
+            О НАС
+          </NavLink>
         </li>
         <li>
-          <NavLink to={routeContactsPage()}>КОНТАКТЫ</NavLink>
+          <NavLink to={routePortfolioPage()} className={styles.item}>
+            ПОРТФОЛИО
+          </NavLink>
+        </li>
+        <li>
+          <NavLink to={routeContactsPage()} className={styles.item}>
+            КОНТАКТЫ
+          </NavLink>
         </li>
       </ul>
     </nav>

@@ -36,6 +36,14 @@
 
 // background: var(--brown);
 
+.item {
+  color: var(--grey2, #565656);
+  transition: 0.4s;
+}
+.item:hover {
+  color: var(--brown, #ca8f65);
+}
+
 .menu {
   display: flex;
   justify-content: space-between;
@@ -55,8 +63,18 @@
   }
 }
 
-@media (max-width: 320px) {
-  .nav {
-    display: none;
+@media (max-width: 850px) {
+  .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 15px;
+    gap: 18.5px;
   }
 }
+
+// @media (max-width: 320px) {
+//   .nav {
+//     display: none;
+//   }
+// }
