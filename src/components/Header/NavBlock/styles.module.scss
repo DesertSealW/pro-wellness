@@ -1,24 +1,30 @@
 .nav {
   display: grid;
-  a {
+
+  .item {
     text-decoration: none;
     margin-right: 60px;
 
     &:first-child {
       margin-left: 0;
     }
+
     &:last-child {
       margin-right: 0;
     }
   }
-  a:hover {
+
+  .item:hover {
     color: var(--brown);
   }
+
 }
 
-::global {
-  .active {
-    color: var(--brown);
+.menu {
+  :global {
+    a.active {
+      color: var(--brown);
+    }
   }
 }
 
@@ -40,6 +46,7 @@
   color: var(--grey2, #565656);
   transition: 0.4s;
 }
+
 .item:hover {
   color: var(--brown, #ca8f65);
 }

@@ -23,8 +23,10 @@
 @media (max-width: 1280px) {
   .social img {
     width: 24px;
-    gap: 30px;
+    height: 24px;
+    object-fit: contain;
   }
+
   .phone {
     width: 24px;
     height: 24px;
@@ -33,13 +35,17 @@
 
 @media (max-width: 850px) {
   .social {
-    gap: 5px;
+    gap: 15px;
     margin: 0 auto;
+
     img {
       width: 30px;
+      height: 30px;
+      object-fit: contain;
     }
   }
 }
+
 // @media (max-width: 320px) {
 //   .social {
 //     display: none;
