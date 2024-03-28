@@ -1,9 +1,9 @@
 import routeMain from "./routes";
-import "./styles.module.scss";
+import styles from "./styles.module.scss";
 
 const PortfolioPage = () => {
   return (
-    <section>
+    <section className={styles.root}>
       <h1 style={{ fontSize: "45px", color: "red" }}>PortfolioPage</h1>;
     </section>
   );
